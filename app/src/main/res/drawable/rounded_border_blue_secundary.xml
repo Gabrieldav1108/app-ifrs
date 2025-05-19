@@ -1,0 +1,11 @@
+<!-- res/drawable/rounded_border.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- Cor de fundo -->
+    <solid android:color="#023347" /> <!-- Troque pela cor desejada -->
+
+    <!-- Arredondamento dos cantos -->
+    <corners android:radius="16dp" />
+
+</shape>
