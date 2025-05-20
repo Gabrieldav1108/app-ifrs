@@ -125,7 +125,28 @@
         </FrameLayout>
 
     </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="340sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="235sp"
+        android:layout_marginRight="25sp"
+        android:layout_marginLeft="25sp">
+        
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recycler"
+            app:layoutManager="com.google.android.material.carousel.CarouselLayoutManager"
+            android:orientation="horizontal"
+            android:background="@drawable/rounded_border"/>
+    </RelativeLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 
 
