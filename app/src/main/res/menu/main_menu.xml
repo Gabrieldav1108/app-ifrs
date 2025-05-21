@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_cursos"
+        android:title="Cursos Ofertados"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/menu_processo"
+        android:title="Processo Seletivo"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/menu_localizacao"
+        android:title="Localização e Transporte"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/menu_bolsas"
+        android:title="Oportunidades de Bolsas"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/menu_atividades"
+        android:title="Atividades Extracurriculares"
+        app:showAsAction="never"/>
+</menu>
