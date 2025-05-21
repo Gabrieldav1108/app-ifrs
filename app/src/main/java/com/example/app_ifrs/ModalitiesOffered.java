@@ -1,9 +1,14 @@
 package com.example.app_ifrs;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
@@ -20,5 +25,57 @@ public class ModalitiesOffered extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+            getSupportActionBar().setHomeAsUpIndicator(R.drawable.menu); // Seu ícone
+        }
+    }
+    private void setSupportActionBar() {
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+            getSupportActionBar().setHomeAsUpIndicator(R.drawable.menu);
+        }
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+
+        if (id == android.R.id.home) {
+            openOptionsMenu();
+            return true;
+        } else if (id == R.id.menu_cursos) {
+            abrirTelaCursos();
+            return true;
+        } else if (id == R.id.menu_processo) {
+            abrirProcessoSeletivo();
+            return true;
+        }
+// Outros itens do menu...
+        return super.onOptionsItemSelected(item);
+    }
+
+    private void abrirTelaCursos() {
+        Intent intent = new Intent(ModalitiesOffered.this, ModalitiesOffered.class);
+        startActivity(intent);
+    }
+
+    private void abrirProcessoSeletivo() {
+        // Implemente a navegação para o processo seletivo
+    }
+
+    //----------screens----------
+    public void openMainScreen(View v){
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
 }

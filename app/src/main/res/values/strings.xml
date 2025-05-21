@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">app_ifrs</string>
+    <string name="formated_text_integrated_EM"><b>Técnicos integrados ao Ensino Médio</b> – permite a formação de Ensino Médio e técnica profissional simultaneamente.</string>
+    <string name="formated_text_concomitants_EM"><b>Técnicos concomitantes ao Ensino Médio</b> – formação técnica profissional para os alunos que estão cursando o Ensino Médio e desejam complementar a formação em turno inverso.</string>
+    <string name="formated_text_subsequent_EM"><b>Técnicos subsequentes ao Ensino Médio</b> – formação técnica profissional para os alunos que já concluíram o Ensino Médio.</string>
+    <string name="formated_text_superiors"><b>Superiores de tecnologia</b> – cursos superiores cuja vocação é atender a demandas específicas do mundo do trabalho. Quem conclui é profissional de nível superior, denominado tecnólogo.</string>
 </resources>

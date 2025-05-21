@@ -184,7 +184,7 @@ public class MainActivity extends AppCompatActivity {
             openOptionsMenu();
             return true;
         } else if (id == R.id.menu_cursos) {
-            abrirTelaCursos();
+            openCoursesScreen();
             return true;
         } else if (id == R.id.menu_processo) {
             abrirProcessoSeletivo();
@@ -194,7 +194,7 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    private void abrirTelaCursos() {
+    private void openCoursesScreen() {
         Intent intent = new Intent(MainActivity.this, ModalitiesOffered.class);
         startActivity(intent);
     }
@@ -202,4 +202,5 @@ public class MainActivity extends AppCompatActivity {
     private void abrirProcessoSeletivo() {
         // Implemente a navegação para o processo seletivo
     }
+
 }
