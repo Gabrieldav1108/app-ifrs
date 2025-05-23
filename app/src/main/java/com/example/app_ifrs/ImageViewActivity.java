@@ -25,7 +25,12 @@ public class ImageViewActivity extends AppCompatActivity {
         });
 
         ImageView imageView = findViewById(R.id.imageView);
+        int imageRes = getIntent().getIntExtra("image_res", 0);
 
-        Glide.with(ImageViewActivity.this).load(getIntent().getStringExtra("image")).into(imageView);
+        if (imageRes != 0) {
+            Glide.with(this)
+                    .load(imageRes)
+                    .into(imageView);
+        }
     }
 }

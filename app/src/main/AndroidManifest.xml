@@ -15,6 +15,18 @@
         android:theme="@style/Theme.App_ifrs"
         tools:targetApi="31">
         <activity
+            android:name=".InfoScreen"
+            android:exported="false" />
+        <activity
+            android:name=".AgroScreen"
+            android:exported="false" />
+        <activity
+            android:name=".AdmScreen"
+            android:exported="false" />
+        <activity
+            android:name=".CoursesIntegrated"
+            android:exported="false" />
+        <activity
             android:name=".ModalitiesOffered"
             android:exported="false" />
         <activity

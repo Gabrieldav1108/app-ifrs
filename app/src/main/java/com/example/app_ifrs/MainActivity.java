@@ -21,10 +21,14 @@ import androidx.core.view.WindowInsetsCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.flexbox.FlexboxLayout;
+import com.google.android.material.carousel.CarouselLayoutManager;
+
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.LinkedHashMap;
+import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 import java.util.TimeZone;
@@ -48,9 +52,11 @@ public class MainActivity extends AppCompatActivity {
         // Habilita o ícone de navegação (três riscos)
         if (getSupportActionBar() != null) {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-            getSupportActionBar().setHomeAsUpIndicator(R.drawable.menu); // Seu ícone
+            getSupportActionBar().setHomeAsUpIndicator(R.drawable.menu);
         }
 
+
+        //Date
         TextView textDate = findViewById(R.id.textViewDate);
         Locale localeBR = new Locale("pt", "BR");
         SimpleDateFormat formatador = new SimpleDateFormat("EEEE, HH:mm", localeBR);
@@ -67,21 +73,25 @@ public class MainActivity extends AppCompatActivity {
         //---------carrosel----------
 
         RecyclerView recyclerView = findViewById(R.id.recycler);
-        ArrayList<String> arrayList = new ArrayList<>();
+        recyclerView.setLayoutManager(new CarouselLayoutManager());
 
-        arrayList.add("https://images.unsplash.com/photo-1747599309107-20504ba6b8dd?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-        arrayList.add("https://images.unsplash.com/photo-1747607174999-0ca07c1ef75a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw3fHx8ZW58MHx8fHx8");
-        arrayList.add("https://images.unsplash.com/photo-1747396379098-714c21bde6f7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw4fHx8ZW58MHx8fHx8");
-        arrayList.add("https://plus.unsplash.com/premium_photo-1747504296849-d477136528ed?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw5fHx8ZW58MHx8fHx8");
-        arrayList.add("https://images.unsplash.com/photo-1747515203898-2df8f083f417?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNnx8fGVufDB8fHx8fA%3D%3D");
+        // Lista de IDs de recursos das imagens
+        List<Integer> localImages = Arrays.asList(
+                R.drawable.logo_ifrs,
+                R.drawable.logo_ifrs,
+                R.drawable.logo_ifrs,
+                R.drawable.logo_ifrs
+        );
 
-        ImageAdapter adapter  = new ImageAdapter(MainActivity.this, arrayList);
-        adapter.setOnItemClickListener(new ImageAdapter.OnItemClickListener(){
-            @Override
-            public void onClick(ImageView imageView, String url) {
-                startActivity(new Intent(MainActivity.this, ImageViewActivity.class).putExtra("image", url),
-                        ActivityOptions.makeSceneTransitionAnimation(MainActivity.this, imageView, "image").toBundle());
-            }
+        ImageAdapter adapter  = new ImageAdapter(MainActivity.this, localImages);
+        adapter.setOnItemClickListener((imageView, resId) -> {
+            Intent intent = new Intent(MainActivity.this, ImageViewActivity.class);
+            intent.putExtra("image_res", resId);
+
+            ActivityOptions options = ActivityOptions
+                    .makeSceneTransitionAnimation(this, imageView, "image");
+
+            startActivity(intent, options.toBundle());
         });
 
         recyclerView.setAdapter(adapter);

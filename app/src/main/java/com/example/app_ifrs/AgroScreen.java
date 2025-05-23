@@ -1,6 +1,5 @@
 package com.example.app_ifrs;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -13,26 +12,31 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class ModalitiesOffered extends AppCompatActivity {
+public class AgroScreen extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_modalities_offered);
+        setContentView(R.layout.activity_agro_screen);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        //-------menu--------
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        // Habilita o ícone de navegação (três riscos)
         if (getSupportActionBar() != null) {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-            getSupportActionBar().setHomeAsUpIndicator(R.drawable.menu); // Seu ícone
+            getSupportActionBar().setHomeAsUpIndicator(R.drawable.menu);
         }
     }
+
+    //------menu-----
     private void setSupportActionBar() {
         if (getSupportActionBar() != null) {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -54,7 +58,7 @@ public class ModalitiesOffered extends AppCompatActivity {
             openOptionsMenu();
             return true;
         } else if (id == R.id.menu_cursos) {
-            openModalitiesOffered();
+            openCoursesScreen();
             return true;
         } else if (id == R.id.menu_processo) {
             abrirProcessoSeletivo();
@@ -64,20 +68,21 @@ public class ModalitiesOffered extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    private void openModalitiesOffered() {
-        NavigationUtils.openActivity(this, getClass());
+
+
+    private void openCoursesScreen() {
+        NavigationUtils.openActivity(this, ModalitiesOffered.class);
     }
 
     private void abrirProcessoSeletivo() {
         // Implemente a navegação para o processo seletivo
     }
 
-    //----------screens----------
     public void openMainScreen(View v){
         NavigationUtils.openActivity(this, MainActivity.class);
     }
 
-    public void openIntegratedCourses(View v){
-        NavigationUtils.openActivity(this, CoursesIntegrated.class);
+    public void openAgroSite(View v){
+        NavigationUtils.openUrl(this, "https://ifrs.edu.br/rolante/ensino/curso-tecnico-em-agropecuaria-integrado-ao-ensino-medio/");
     }
 }

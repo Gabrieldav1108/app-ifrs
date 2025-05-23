@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/green_secundary"
+        android:orientation="vertical"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="20sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/rounded_border_blue"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="73dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/logo_ifrs__2___1___1_"
+                tools:srcCompat="@drawable/logo_ifrs" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_weight="1"
+                android:fontFamily="@font/allerta"
+                android:paddingTop="8sp"
+                android:text="CAMPUS\nROLANTE"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:clickable="true"
+                android:onClick="openMainScreen"/>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:paddingTop="8dp"
+                android:paddingStart="5dp"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/rounded_border_green"
+                app:title="menu">
+            </androidx.appcompat.widget.Toolbar>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rounded_border_blue_secundary"
+            android:orientation="vertical"
+            android:paddingStart="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:orientation="vertical"
+                android:padding="15dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cursos"
+                    android:fontFamily="@font/adlam_display"
+                    android:textColor="@color/white"
+                    >
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/adlam_display"
+                    android:text="Integrados ao Ensino Médio"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginTop="3sp"
+            android:background="@drawable/more_rounded_border"
+            />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_border_green"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:breakStrategy="balanced"
+                android:ellipsize="none"
+                android:fontFamily="@font/alata"
+                android:hyphenationFrequency="normal"
+                android:justificationMode="inter_word"
+                android:maxLines="20"
+                android:scrollHorizontally="false"
+                android:singleLine="false"
+                android:text="@string/formated_text_integrated_courses"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:layout_gravity="center"/>
+        </FrameLayout>
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="75dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/logo_adm"
+                android:onClick="openAdmScreen"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/logo_agro"
+                android:onClick="openAgroScreen"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="openInfoScreen"
+                android:src="@drawable/logo_info"
+                />
+
+        </com.google.android.flexbox.FlexboxLayout>
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:justifyContent="flex_end"
+            app:alignItems="center">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/BlueButton"
+                android:background="@drawable/rounded_border_blue_full"
+                android:text="Outros cursos"
+                android:textStyle="bold"
+                android:onClick="openIntegratedCourses"
+                android:textSize="13sp"/>
+        </com.google.android.flexbox.FlexboxLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

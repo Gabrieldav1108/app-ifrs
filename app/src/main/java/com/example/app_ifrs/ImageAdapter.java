@@ -12,33 +12,43 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class ImageAdapter extends RecyclerView.Adapter<ImageAdapter.ViewHolder> {
-    Context context;
-    ArrayList<String> arrayList;
-    OnItemClickListener onItemClickListener;
+    private Context context;
+    private List<Integer> imageResources;
+    private OnItemClickListener listener;
 
-    public ImageAdapter(Context context, ArrayList<String> arrayList) {
+    public ImageAdapter(Context context, List<Integer> imageResources) {
         this.context = context;
-        this.arrayList = arrayList;
+        this.imageResources = imageResources;
     }
 
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(context).inflate(R.layout.image_list_item, parent, false);
+        View view = LayoutInflater.from(context)
+                .inflate(R.layout.image_list_item, parent, false);
         return new ViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        Glide.with(context).load(arrayList.get(position)).into(holder.imageView);
-        holder.imageView.setOnClickListener(view -> onItemClickListener.onClick(holder.imageView, arrayList.get(position)));
+        // Carrega imagem local usando Glide ou setImageResource
+        Glide.with(context)
+                .load(imageResources.get(position))
+                .into(holder.imageView);
+
+        holder.itemView.setOnClickListener(v -> {
+            if (listener != null) {
+                listener.onClick(holder.imageView, String.valueOf(imageResources.get(position)));
+            }
+        });
     }
 
     @Override
     public int getItemCount() {
-        return arrayList.size();
+        return imageResources.size();
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
@@ -50,7 +60,7 @@ public class ImageAdapter extends RecyclerView.Adapter<ImageAdapter.ViewHolder> 
     }
 
     public void setOnItemClickListener(OnItemClickListener onItemClickListener) {
-        this.onItemClickListener = onItemClickListener;
+        this.listener = onItemClickListener;
     }
 
     public interface OnItemClickListener{

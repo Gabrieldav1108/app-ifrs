@@ -116,9 +116,7 @@
             android:layout_height="5dp"
             android:layout_marginTop="3sp"
             android:background="@drawable/more_rounded_border"
-            >
-
-        </FrameLayout>
+            />
 
         <LinearLayout
             android:layout_width="match_parent"

@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,13 +14,18 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class ModalitiesOffered extends AppCompatActivity {
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
+import java.util.TimeZone;
+
+public class CoursesIntegrated extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_modalities_offered);
+        setContentView(R.layout.activity_courses_integrated);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -28,18 +34,14 @@ public class ModalitiesOffered extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+    // Habilita o ícone de navegação (três riscos)
         if (getSupportActionBar() != null) {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
             getSupportActionBar().setHomeAsUpIndicator(R.drawable.menu); // Seu ícone
         }
-    }
-    private void setSupportActionBar() {
-        if (getSupportActionBar() != null) {
-            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-            getSupportActionBar().setHomeAsUpIndicator(R.drawable.menu);
-        }
-    }
 
+    }
+    //-------menu--------
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main_menu, menu);
@@ -54,7 +56,7 @@ public class ModalitiesOffered extends AppCompatActivity {
             openOptionsMenu();
             return true;
         } else if (id == R.id.menu_cursos) {
-            openModalitiesOffered();
+            openModalitiesScreen();
             return true;
         } else if (id == R.id.menu_processo) {
             abrirProcessoSeletivo();
@@ -64,20 +66,27 @@ public class ModalitiesOffered extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    private void openModalitiesOffered() {
-        NavigationUtils.openActivity(this, getClass());
+    private void openModalitiesScreen() {
+        NavigationUtils.openActivity(this, ModalitiesOffered.class);
     }
 
     private void abrirProcessoSeletivo() {
         // Implemente a navegação para o processo seletivo
     }
-
-    //----------screens----------
     public void openMainScreen(View v){
         NavigationUtils.openActivity(this, MainActivity.class);
     }
 
-    public void openIntegratedCourses(View v){
-        NavigationUtils.openActivity(this, CoursesIntegrated.class);
+    public void openAdmScreen(View v){
+        NavigationUtils.openActivity(this, AdmScreen.class);
     }
+
+    public void openAgroScreen(View v){
+        NavigationUtils.openActivity(this, AgroScreen.class);
+    }
+
+    public void openInfoScreen(View v){
+        NavigationUtils.openActivity(this, InfoScreen.class);
+    }
+
 }

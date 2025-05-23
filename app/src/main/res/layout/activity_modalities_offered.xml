@@ -97,7 +97,7 @@
                     android:layout_marginLeft="8sp"
                     android:layout_weight="1"
                     android:paddingTop="12sp"
-                    app:srcCompat="@drawable/paper_secundary"
+                    app:srcCompat="@drawable/graduation_hat"
                     android:layout_marginEnd="20dp"
                     />
 
@@ -217,7 +217,8 @@
                 style="@style/BlueButton"
                 android:background="@drawable/rounded_border_blue_full"
                 android:text="Integrados"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                android:onClick="openIntegratedCourses"/>
 
             <Button
                 android:layout_width="wrap_content"
