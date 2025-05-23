@@ -198,6 +198,17 @@ public class MainActivity extends AppCompatActivity {
         } else if (id == R.id.menu_processo) {
             abrirProcessoSeletivo();
             return true;
+        }else if (id == R.id.menu_bolsas) {
+            openOprtunity();
+            return true;
+        }
+        else if (id == R.id.menu_localizacao) {
+            openTransportsScreen();
+            return true;
+        }
+        else if (id == R.id.menu_atividades) {
+            openAtctivitys();
+            return true;
         }
 // Outros itens do menu...
         return super.onOptionsItemSelected(item);
@@ -208,8 +219,18 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+
     private void abrirProcessoSeletivo() {
         // Implemente a navegação para o processo seletivo
+    }
+    private void openAtctivitys() {
+        NavigationUtils.openActivity(this, Transports.class);
+    }
+    private void openTransportsScreen(){
+        NavigationUtils.openActivity(this, Transports.class);
+    }
+    private void openOprtunity(){
+        NavigationUtils.openActivity(this, Transports.class);
     }
 
 }

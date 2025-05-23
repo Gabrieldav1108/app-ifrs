@@ -65,6 +65,16 @@ public class AdmScreen extends AppCompatActivity {
         } else if (id == R.id.menu_processo) {
             abrirProcessoSeletivo();
             return true;
+        }else if (id == R.id.menu_localizacao) {
+            openTransportsScreen();
+            return true;
+        }else if (id == R.id.menu_bolsas) {
+            openOprtunity();
+            return true;
+        }
+        else if (id == R.id.menu_atividades) {
+            openAtctivitys();
+            return true;
         }
 // Outros itens do menu...
         return super.onOptionsItemSelected(item);
@@ -88,5 +98,17 @@ public class AdmScreen extends AppCompatActivity {
         NavigationUtils.openUrl(this, "https://ifrs.edu.br/rolante/ensino/curso-tecnico-em-administracao-integrado-ao-ensino-medio/ ");
     }
 
+    public void openOuthersCourses(View v){
+        NavigationUtils.openActivity(this, ListCourses.class);
+    }
+    private void openAtctivitys() {
+        NavigationUtils.openActivity(this, Transports.class);
+    }
+    private void openTransportsScreen(){
+        NavigationUtils.openActivity(this, Transports.class);
+    }
+    private void openOprtunity(){
+        NavigationUtils.openActivity(this, Transports.class);
+    }
 
 }

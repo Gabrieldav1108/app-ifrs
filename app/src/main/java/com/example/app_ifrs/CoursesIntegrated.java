@@ -61,6 +61,9 @@ public class CoursesIntegrated extends AppCompatActivity {
         } else if (id == R.id.menu_processo) {
             abrirProcessoSeletivo();
             return true;
+        }else if (id == R.id.menu_localizacao) {
+            openTransportsScreen();
+            return true;
         }
 // Outros itens do menu...
         return super.onOptionsItemSelected(item);
@@ -72,6 +75,15 @@ public class CoursesIntegrated extends AppCompatActivity {
 
     private void abrirProcessoSeletivo() {
         // Implemente a navegação para o processo seletivo
+    }
+    private void openAtctivitys() {
+        NavigationUtils.openActivity(this, Transports.class);
+    }
+    private void openTransportsScreen(){
+        NavigationUtils.openActivity(this, Transports.class);
+    }
+    private void openOprtunity(){
+        NavigationUtils.openActivity(this, Transports.class);
     }
     public void openMainScreen(View v){
         NavigationUtils.openActivity(this, MainActivity.class);
@@ -87,6 +99,9 @@ public class CoursesIntegrated extends AppCompatActivity {
 
     public void openInfoScreen(View v){
         NavigationUtils.openActivity(this, InfoScreen.class);
+    }
+    public void openOuthersCourses(View v){
+        NavigationUtils.openActivity(this, ListCourses.class);
     }
 
 }

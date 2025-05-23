@@ -159,6 +159,7 @@
                 android:background="@drawable/rounded_border_blue_full"
                 android:text="outros cursos"
                 android:textStyle="bold"
+                android:onClick="openOuthersCourses"
                 />
         </com.google.android.flexbox.FlexboxLayout>
     </LinearLayout>
