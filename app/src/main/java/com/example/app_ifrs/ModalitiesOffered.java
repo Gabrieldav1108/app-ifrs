@@ -80,4 +80,8 @@ public class ModalitiesOffered extends AppCompatActivity {
     public void openIntegratedCourses(View v){
         NavigationUtils.openActivity(this, CoursesIntegrated.class);
     }
+
+    public void openOuthersCourses(View v){
+        NavigationUtils.openActivity(this, ListCourses.class);
+    }
 }

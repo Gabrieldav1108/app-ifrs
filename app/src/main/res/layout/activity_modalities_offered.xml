@@ -226,6 +226,7 @@
                 style="@style/BlueButton"
                 android:background="@drawable/rounded_border_blue_full"
                 android:text="outros cursos"
+                android:onClick="openOuthersCourses"
                 android:textStyle="bold"/>
         </com.google.android.flexbox.FlexboxLayout>
 
