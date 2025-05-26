@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FreePass">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/green_secundary"
+        android:orientation="vertical"
+        android:paddingLeft="25dp"
+        android:paddingTop="20sp"
+        android:paddingRight="25dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/rounded_border_blue"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="73dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/logo_ifrs__2___1___1_"
+                tools:srcCompat="@drawable/logo_ifrs" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:fontFamily="@font/allerta"
+                android:onClick="openMainScreen"
+                android:paddingTop="8sp"
+                android:text="CAMPUS\nROLANTE"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/rounded_border_green"
+                android:paddingStart="5dp"
+                android:paddingTop="8dp"
+                app:title="menu"></androidx.appcompat.widget.Toolbar>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            android:layout_marginTop="15dp"
+            android:paddingTop="4dp"
+            android:background="@drawable/rounded_border_blue_secundary"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:paddingLeft="10sp">
+
+            <com.google.android.flexbox.FlexboxLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                app:alignItems="center"
+                android:paddingEnd="50dp"
+                android:paddingStart="20dp"
+                app:justifyContent="space_between"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="75dp"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Visão geral"
+                        android:fontFamily="@font/adlam_display"
+                        android:textColor="@color/white"
+                        >
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/adlam_display"
+                        android:text="Passe Livre"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="46dp"
+                    android:layout_height="67dp"
+                    android:layout_marginLeft="8sp"
+                    android:layout_weight="1"
+                    android:paddingTop="12sp"
+                    app:srcCompat="@drawable/bus" />
+            </com.google.android.flexbox.FlexboxLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginTop="3sp"
+            android:background="@drawable/more_rounded_border">
+        </FrameLayout>
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="17dp"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounded_border_green"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/formated_text_free_pass"
+                    android:fontFamily="@font/alata"
+                    android:textColor="@color/white"
+                    >
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Quem pode ter esse direito?"
+                    android:fontFamily="@font/alata"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/alata"
+                    android:text="@string/formated_requests_to_free_pass"
+                    android:paddingStart="10sp"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Documentos necessários:"
+                    android:fontFamily="@font/alata"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/alata"
+                    android:text="@string/formated_text_documents_to_free_pass"
+                    android:paddingStart="10sp"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_important_to_free_pass"
+                    android:fontFamily="@font/alata"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Como posso solicitar?"
+                    android:fontFamily="@font/alata"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_information_free_pass"
+                    android:fontFamily="@font/alata"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

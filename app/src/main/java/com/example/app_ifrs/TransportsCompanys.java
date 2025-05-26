@@ -12,13 +12,13 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class Transports extends AppCompatActivity {
+public class TransportsCompanys extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_transports);
+        setContentView(R.layout.activity_transports_companys);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -34,7 +34,6 @@ public class Transports extends AppCompatActivity {
             getSupportActionBar().setHomeAsUpIndicator(R.drawable.menu);
         }
     }
-
     //------menu-----
     private void setSupportActionBar() {
         if (getSupportActionBar() != null) {
@@ -101,10 +100,5 @@ public class Transports extends AppCompatActivity {
     public void openMainScreen(View v){
         NavigationUtils.openActivity(this, MainActivity.class);
     }
-    public void openCompany(View v){
-        NavigationUtils.openActivity(this, TransportsCompanys.class);
-    }
-    public void openFreePass(View v){
-        NavigationUtils.openActivity(this, FreePass.class);
-    }
+
 }

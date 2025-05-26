@@ -8,4 +8,47 @@
     <string name="formated_text_adm"> O curso técnico em Administração forma profissionais aptos a atuar em diversas áreas de uma empresa, como finanças, recursos humanos, marketing e logística. Durante o curso, o aluno aprende na prática a organizar, planejar e controlar processos administrativos, desenvolvendo habilidades importantes para o mundo do trabalho.</string>
     <string name="formated_text_agro"> O curso técnico em Agropecuária prepara o estudante para trabalhar com a produção rural, manejando animais, cultivando plantas e operando máquinas agrícolas. O curso combina teoria e prática, formando profissionais prontos para atuar no campo com técnicas modernas e sustentáveis.</string>
     <string name="formated_text_info"> O curso técnico em Informática forma profissionais capacitados para desenvolver, manter e dar suporte a sistemas e redes de computadores. O aluno aprende programação, banco de dados, hardware, redes e lógica computacional, estando preparado para atuar no setor de tecnologia.</string>
+    <string name="formated_text_transport"> O IFRS Campus Rolante necessita de transporte para o deslocamento dos estudantes, que pode ser realizado por <b>empresas privadas, pelo transporte público municipal de Rolante(gratuito)</b> — dependendo da disponibilidade de linhas, horários e itinerários — ou ainda pelo transporte da Citral, que <b>pode ser gratuito</b> conforme determinadas condições. Para mais informações sobre o <b>Passe Livre da Citral e como utilizá-lo</b> para ter acesso ao transporte gratuito, clique no botão abaixo e selecione a opção correspondente.</string>
+    <string name="formated_text_free_pass"> O IFRS Campus Rolante oferece a possibilidade de transporte intermunicipal para os estudantes, realizado pela empresa <b>Citral</b>. Esse serviço facilita o acesso ao campus, especialmente para quem mora em outros municípios e possui dificuldades financeiras.
+        <b>Estudantes em situação de vulnerabilidade</b> podem ter direito ao <b>Passe Livre Estudantil</b>, que garante a <b>gratuidade</b> no transporte intermunicipal, conforme regras do programa</string>
+    <string name="formated_requests_to_free_pass">
+        - Renda familiar per capita de até 1,5 salário mínimo regional;\n
+        - Residir em município diferente do local de estudo;\n
+        - Utilizar transporte intermunicipal para chegar ao campus.\n
+    </string>
+    <string name="formated_text_documents_to_free_pass">
+        - Foto 3x4;\n
+        - Carteira de Identificação Estudantil válida;\n
+        - Formulário cadastral e declaração de grupo familiar com firma reconhecida;\n
+        - Comprovante de matrícula atualizado;\n
+        - Documento oficial com foto (RG, CNH ou Certidão de Nascimento) e CPF;\n
+        - Comprovante de residência atualizado (até 90 dias).
+    </string>
+    <string name="text_important_to_free_pass"><b>Importante:</b> Entregar toda a documentação corretamente é fundamental para conseguir o benefício.</string>
+    <string name="text_information_free_pass">
+        Para informações atualizadas, consulte a Coordenação de Assistência Estudantil (CAEP) do campus.\n
+        Email: coordenacao.caep@rolante.ifrs.edu.br\n
+        Telefone whats: +55 51 3547-9603\n
+    </string>
+    <string name="formated_informations_citral">
+        Telefone: (51) 994546869\n
+        Cidades: Igrejinha, Parobé, Taquara e Santo Antônio
+    </string>
+    <string name="formated_informations_rbm">
+        Telefone: (51) 96693410\n
+        Cidades: Parobé, Taquara
+    </string>
+    <string name="formated_informations_maroto">
+        Telefone: (51) 999584720\n
+        Email: marotoviagens.frota@gmail.com\n
+        Cidades: Parobé, Taquara
+    </string>
+    <string name="formated_informations_tche_leva">
+        Telefone: (51) 97072829\n
+        Cidades: Rolante
+    </string>
+    <string name="formated_informations_salvador">
+        Telefone: (51) 97072829\n
+        Cidades: Rolante
+    </string>
 </resources>
