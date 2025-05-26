@@ -145,11 +145,14 @@ public class ListCourses extends AppCompatActivity {
             return true;
         }
         else if (id == R.id.menu_bolsas) {
-            openOprtunity();
+            openOportunity();
             return true;
         }
         else if (id == R.id.menu_atividades) {
-            openAtctivitys();
+            openActivities();
+            return true;
+        }else if (id == R.id.menu_principal) {
+            openIfrsSite();
             return true;
         }
 // Outros itens do menu...
@@ -161,18 +164,21 @@ public class ListCourses extends AppCompatActivity {
     private void openCoursesScreen() {
         NavigationUtils.openActivity(this, ModalitiesOffered.class);
     }
+    private void openIfrsSite() {
+        NavigationUtils.openUrl(this, "https://ifrs.edu.br/rolante/");
+    }
 
     private void abrirProcessoSeletivo() {
         // Implemente a navegação para o processo seletivo
     }
-    private void openAtctivitys() {
-        NavigationUtils.openActivity(this, Transports.class);
+    private void openActivities() {
+        NavigationUtils.openActivity(this, ComplementaryActivities.class);
     }
     private void openTransportsScreen(){
         NavigationUtils.openActivity(this, Transports.class);
     }
-    private void openOprtunity(){
-        NavigationUtils.openActivity(this, Transports.class);
+    private void openOportunity(){
+        NavigationUtils.openActivity(this, Opportunities.class);
     }
 
     public void openMainScreen(View v){

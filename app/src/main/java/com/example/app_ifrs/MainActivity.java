@@ -199,7 +199,7 @@ public class MainActivity extends AppCompatActivity {
             abrirProcessoSeletivo();
             return true;
         }else if (id == R.id.menu_bolsas) {
-            openOprtunity();
+            openOportunity();
             return true;
         }
         else if (id == R.id.menu_localizacao) {
@@ -207,7 +207,10 @@ public class MainActivity extends AppCompatActivity {
             return true;
         }
         else if (id == R.id.menu_atividades) {
-            openAtctivitys();
+            openAtctivities();
+            return true;
+        }else if (id == R.id.menu_principal) {
+            openIfrsSite();
             return true;
         }
 // Outros itens do menu...
@@ -218,19 +221,22 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, ModalitiesOffered.class);
         startActivity(intent);
     }
-
+    private void openIfrsSite() {
+        NavigationUtils.openUrl(this, "https://ifrs.edu.br/rolante/");
+    }
 
     private void abrirProcessoSeletivo() {
         // Implemente a navegação para o processo seletivo
     }
-    private void openAtctivitys() {
-        NavigationUtils.openActivity(this, Transports.class);
+    private void openAtctivities() {
+        NavigationUtils.openActivity(this, ComplementaryActivities.class);
     }
     private void openTransportsScreen(){
         NavigationUtils.openActivity(this, Transports.class);
     }
-    private void openOprtunity(){
-        NavigationUtils.openActivity(this, Transports.class);
+    private void openOportunity(){
+        NavigationUtils.openActivity(this, Opportunities.class);
     }
+
 
 }

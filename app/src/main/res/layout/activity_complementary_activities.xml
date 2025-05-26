@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ComplementaryActivities">
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/green_secundary"
+        android:orientation="vertical"
+        android:paddingLeft="25dp"
+        android:paddingTop="20sp"
+        android:paddingRight="25dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/rounded_border_blue"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="73dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/logo_ifrs__2___1___1_"
+                tools:srcCompat="@drawable/logo_ifrs" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:fontFamily="@font/allerta"
+                android:onClick="openMainScreen"
+                android:paddingTop="8sp"
+                android:text="CAMPUS\nROLANTE"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/rounded_border_green"
+                android:paddingStart="5dp"
+                android:paddingTop="8dp"
+                app:title="menu"></androidx.appcompat.widget.Toolbar>
+        </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="78dp"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:background="@drawable/rounded_border_blue_secundary"
+                android:orientation="vertical"
+                android:paddingStart="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Amplie seu conhecimento"
+                        android:fontFamily="@font/adlam_display"
+                        android:textColor="@color/white"
+                        >
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/adlam_display"
+                        android:text="Atividades Complementares"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginTop="3sp"
+            android:background="@drawable/more_rounded_border">
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rounded_border_green">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:breakStrategy="balanced"
+                android:ellipsize="none"
+                android:fontFamily="@font/alata"
+                android:hyphenationFrequency="normal"
+                android:justificationMode="inter_word"
+                android:maxLines="20"
+                android:scrollHorizontally="false"
+                android:singleLine="false"
+                android:text="@string/text_complementary_activities"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                />
+        </FrameLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="25sp"
+            android:layout_marginLeft="25sp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/recycler"
+                app:layoutManager="com.google.android.material.carousel.CarouselLayoutManager"
+                android:orientation="horizontal"
+                android:background="@drawable/rounded_border"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,6 +2,10 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
+        android:id="@+id/menu_principal"
+        android:title="Página Principal"
+        app:showAsAction="never"/>
+    <item
         android:id="@+id/menu_cursos"
         android:title="Cursos Ofertados"
         app:showAsAction="never"/>
@@ -19,6 +23,6 @@
         app:showAsAction="never"/>
     <item
         android:id="@+id/menu_atividades"
-        android:title="Atividades Extracurriculares"
+        android:title="Atividades Complementares"
         app:showAsAction="never"/>
 </menu>

@@ -71,7 +71,10 @@ public class AgroScreen extends AppCompatActivity {
             return true;
         }
         else if (id == R.id.menu_atividades) {
-            openAtctivitys();
+            openActivities();
+            return true;
+        }else if (id == R.id.menu_principal) {
+            openIfrsSite();
             return true;
         }
 // Outros itens do menu...
@@ -87,14 +90,17 @@ public class AgroScreen extends AppCompatActivity {
     private void abrirProcessoSeletivo() {
         // Implemente a navegação para o processo seletivo
     }
-    private void openAtctivitys() {
-        NavigationUtils.openActivity(this, Transports.class);
+    private void openIfrsSite() {
+        NavigationUtils.openUrl(this, "https://ifrs.edu.br/rolante/");
+    }
+    private void openActivities() {
+        NavigationUtils.openActivity(this, ComplementaryActivities.class);
     }
     private void openTransportsScreen(){
         NavigationUtils.openActivity(this, Transports.class);
     }
     private void openOprtunity(){
-        NavigationUtils.openActivity(this, Transports.class);
+        NavigationUtils.openActivity(this, Opportunities.class);
     }
 
     public void openMainScreen(View v){
