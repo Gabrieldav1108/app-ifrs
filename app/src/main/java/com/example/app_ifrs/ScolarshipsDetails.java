@@ -1,9 +1,10 @@
 package com.example.app_ifrs;
 
+import android.app.ActivityOptions;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,14 +12,21 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.recyclerview.widget.RecyclerView;
 
-public class Opportunities extends AppCompatActivity {
+import com.example.app_ifrs.adapters.ImageAdapter;
+import com.google.android.material.carousel.CarouselLayoutManager;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class ScolarshipsDetails extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_opportunities);
+        setContentView(R.layout.activity_scolarships_details);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -33,6 +41,31 @@ public class Opportunities extends AppCompatActivity {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
             getSupportActionBar().setHomeAsUpIndicator(R.drawable.menu);
         }
+        //---------carrosel----------
+
+        RecyclerView recyclerView = findViewById(R.id.recycler);
+        recyclerView.setLayoutManager(new CarouselLayoutManager());
+
+        // Lista de IDs de recursos das imagens
+        List<Integer> localImages = Arrays.asList(
+                R.drawable.logo_ifrs,
+                R.drawable.logo_ifrs,
+                R.drawable.logo_ifrs,
+                R.drawable.logo_ifrs
+        );
+
+        ImageAdapter adapter  = new ImageAdapter(this, localImages);
+        adapter.setOnItemClickListener((imageView, resId) -> {
+            Intent intent = new Intent(this, ImageViewActivity.class);
+            intent.putExtra("image_res", resId);
+
+            ActivityOptions options = ActivityOptions
+                    .makeSceneTransitionAnimation(this, imageView, "image");
+
+            startActivity(intent, options.toBundle());
+        });
+
+        recyclerView.setAdapter(adapter);
     }
     //------menu-----
     private void setSupportActionBar() {
@@ -61,56 +94,42 @@ public class Opportunities extends AppCompatActivity {
         } else if (id == R.id.menu_processo) {
             abrirProcessoSeletivo();
             return true;
-        }else if (id == R.id.menu_localizacao) {
-            openTransportsScreen();
         }else if (id == R.id.menu_bolsas) {
-            openOprtunity();
+            openOportunity();
+            return true;
+        }
+        else if (id == R.id.menu_localizacao) {
+            openTransportsScreen();
             return true;
         }
         else if (id == R.id.menu_atividades) {
-            openActivities();
+            openAtctivities();
             return true;
         }else if (id == R.id.menu_principal) {
             openIfrsSite();
             return true;
         }
-
-
 // Outros itens do menu...
         return super.onOptionsItemSelected(item);
     }
 
-
-
     private void openCoursesScreen() {
         NavigationUtils.openActivity(this, ModalitiesOffered.class);
     }
-
-    private void openTransportsScreen(){
-        NavigationUtils.openActivity(this, Transports.class);
-    }
-    private void openActivities() {
-        NavigationUtils.openActivity(this, ComplementaryActivities.class);
-    }
     private void openIfrsSite() {
         NavigationUtils.openUrl(this, "https://ifrs.edu.br/rolante/");
-    }
-    private void openOprtunity(){
-        NavigationUtils.openActivity(this, Opportunities.class);
     }
 
     private void abrirProcessoSeletivo() {
         // Implemente a navegação para o processo seletivo
     }
-
-    public void openMainScreen(View v){
-        NavigationUtils.openActivity(this, MainActivity.class);
+    private void openAtctivities() {
+        NavigationUtils.openActivity(this, ComplementaryActivities.class);
     }
-    public void openEditais(View v){
-        NavigationUtils.openUrl(this, "https://ifrs.edu.br/rolante/editais");
+    private void openTransportsScreen(){
+        NavigationUtils.openActivity(this, Transports.class);
     }
-    public void openDetails(View v){
-        NavigationUtils.openActivity(this, ScolarshipsDetails.class);
+    private void openOportunity(){
+        NavigationUtils.openActivity(this, Opportunities.class);
     }
-
 }

@@ -51,5 +51,20 @@
         Telefone: (51) 97072829\n
         Cidades: Rolante
     </string>
+    <string name="formated_informations_scholarships">
+        O <b>IFRS – Campus Rolante</b> oferece diversas oportunidades para você se envolver em atividades que vão além da sala de aula! São bolsas para Monitoria, Tutoria, Extensão, Pesquisa, Ações Integradas e Apoio Técnico.\n
+        <b>Participando, você poderá:\n</b>
+        -Desenvolver novas habilidades acadêmicas e profissionais;\n
+        -Ampliar seu networking com professores e colegas;\n
+        -Contribuir para projetos que fazem a diferença dentro e fora da instituição;\n
+        -Fortalecer seu currículo com experiências práticas;\n
+        -E ainda receber uma remuneração como reconhecimento pelo seu empenho!\n
+        As vagas são divulgadas por meio de editais ao longo do ano, com informações sobre os requisitos, benefícios e prazos de inscrição.
+    </string>
     <string name="text_complementary_activities">O IFRS Campus Rolante realiza Atividades Complementares que enriquecem a formação acadêmica e pessoal dos estudantes. Por meio de projetos de extensão e ações culturais, promove vivências que estimulam a reflexão sobre identidade, diversidade e cidadania.</string>
+    <string name="text_informations_mentory">Atividade na qual o estudante auxilia outros colegas em disciplinas específicas, reforçando conteúdos, tirando dúvidas e apoiando o professor. A monitoria visa potencializar o aprendizado, promover a colaboração entre estudantes e desenvolver habilidades pedagógicas.</string>
+    <string name="text_informations_tutoring">Semelhante à monitoria, a tutoria envolve o acompanhamento e apoio individualizado ou em grupo para alunos que apresentam dificuldades acadêmicas. O tutor atua como um orientador, contribuindo para o sucesso escolar e a permanência dos colegas na instituição.</string>
+    <string name="text_informations_extension">A extensão universitária conecta a instituição com a comunidade externa por meio de projetos, cursos, eventos e outras ações que buscam aplicar o conhecimento acadêmico em benefício da sociedade. Estudantes bolsistas atuam diretamente na organização e execução dessas atividades.</string>
+    <string name="text_informations_search">Atividade voltada para a investigação científica, tecnológica ou social, desenvolvida sob a orientação de um professor. Os bolsistas participam da elaboração, execução e divulgação de projetos de pesquisa, ampliando sua formação acadêmica e contribuindo para a produção de conhecimento.</string>
+    <string name="text_informations_integrated_actions">Conjunto de atividades que unem ensino, pesquisa e extensão, promovendo a formação integral dos estudantes. Essas ações visam resolver problemas reais, estimular a interdisciplinaridade e a atuação socialmente comprometida.</string>
 </resources>
