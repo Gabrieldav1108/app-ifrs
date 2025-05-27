@@ -57,7 +57,7 @@ public class ModalitiesOffered extends AppCompatActivity {
             openModalitiesOffered();
             return true;
         } else if (id == R.id.menu_processo) {
-            abrirProcessoSeletivo();
+            openSelectionProcess();
             return true;
         }else if (id == R.id.menu_localizacao) {
             openTransportsScreen();
@@ -71,7 +71,7 @@ public class ModalitiesOffered extends AppCompatActivity {
             openActivities();
             return true;
         }else if (id == R.id.menu_principal) {
-            openIfrsSite();
+            openMainScreen();
             return true;
         }
 // Outros itens do menu...
@@ -81,9 +81,8 @@ public class ModalitiesOffered extends AppCompatActivity {
     private void openModalitiesOffered() {
         NavigationUtils.openActivity(this, getClass());
     }
-
-    private void abrirProcessoSeletivo() {
-        // Implemente a navegação para o processo seletivo
+    private void openSelectionProcess() {
+        NavigationUtils.openActivity(this, SelectionProcess.class);
     }
     private void openActivities() {
         NavigationUtils.openActivity(this, ComplementaryActivities.class);
@@ -98,8 +97,7 @@ public class ModalitiesOffered extends AppCompatActivity {
         NavigationUtils.openActivity(this, Opportunities.class);
     }
 
-    //----------screens----------
-    public void openMainScreen(View v){
+    private void openMainScreen(){
         NavigationUtils.openActivity(this, MainActivity.class);
     }
 

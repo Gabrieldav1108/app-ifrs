@@ -63,7 +63,7 @@ public class AdmScreen extends AppCompatActivity {
             openCoursesScreen();
             return true;
         } else if (id == R.id.menu_processo) {
-            abrirProcessoSeletivo();
+            openSelectionProcess();
             return true;
         }else if (id == R.id.menu_localizacao) {
             openTransportsScreen();
@@ -76,7 +76,7 @@ public class AdmScreen extends AppCompatActivity {
             openAtctivities();
             return true;
         }else if (id == R.id.menu_principal) {
-            openIfrsSite();
+            openMainScreen();
             return true;
         }
 // Outros itens do menu...
@@ -88,15 +88,13 @@ public class AdmScreen extends AppCompatActivity {
     private void openCoursesScreen() {
         NavigationUtils.openActivity(this, ModalitiesOffered.class);
     }
-
-    private void abrirProcessoSeletivo() {
-        // Implemente a navegação para o processo seletivo
-    }
     private void openIfrsSite() {
         NavigationUtils.openUrl(this, "https://ifrs.edu.br/rolante/");
     }
-
-    public void openMainScreen(View v){
+    private void openSelectionProcess() {
+        NavigationUtils.openActivity(this, SelectionProcess.class);
+    }
+    public void openMainScreen(){
         NavigationUtils.openActivity(this, MainActivity.class);
     }
 

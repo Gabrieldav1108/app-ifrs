@@ -3,26 +3,32 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/menu_principal"
-        android:title="Página Principal"
+        android:title="Tela Principal"
+        android:icon="@drawable/ic_home"
         app:showAsAction="never"/>
     <item
         android:id="@+id/menu_cursos"
         android:title="Cursos Ofertados"
+        android:icon="@drawable/ic_lesson"
         app:showAsAction="never"/>
     <item
         android:id="@+id/menu_processo"
+        android:icon="@drawable/ic_journal"
         android:title="Processo Seletivo"
         app:showAsAction="never"/>
     <item
         android:id="@+id/menu_localizacao"
+        android:icon="@drawable/ic_location"
         android:title="Localização e Transporte"
         app:showAsAction="never"/>
     <item
         android:id="@+id/menu_bolsas"
         android:title="Oportunidades de Bolsas"
+        android:icon="@drawable/ic_scholarships"
         app:showAsAction="never"/>
     <item
         android:id="@+id/menu_atividades"
+        android:icon="@drawable/ic_activities"
         android:title="Atividades Complementares"
         app:showAsAction="never"/>
 </menu>

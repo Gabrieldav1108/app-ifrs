@@ -92,7 +92,7 @@ public class ScolarshipsDetails extends AppCompatActivity {
             openCoursesScreen();
             return true;
         } else if (id == R.id.menu_processo) {
-            abrirProcessoSeletivo();
+            openSelectionProcess();
             return true;
         }else if (id == R.id.menu_bolsas) {
             openOportunity();
@@ -106,7 +106,7 @@ public class ScolarshipsDetails extends AppCompatActivity {
             openAtctivities();
             return true;
         }else if (id == R.id.menu_principal) {
-            openIfrsSite();
+            openMainScreen();
             return true;
         }
 // Outros itens do menu...
@@ -119,12 +119,14 @@ public class ScolarshipsDetails extends AppCompatActivity {
     private void openIfrsSite() {
         NavigationUtils.openUrl(this, "https://ifrs.edu.br/rolante/");
     }
-
-    private void abrirProcessoSeletivo() {
-        // Implemente a navegação para o processo seletivo
+    private void openSelectionProcess() {
+        NavigationUtils.openActivity(this, SelectionProcess.class);
     }
     private void openAtctivities() {
         NavigationUtils.openActivity(this, ComplementaryActivities.class);
+    }
+    private void openMainScreen(){
+        NavigationUtils.openActivity(this, MainActivity.class);
     }
     private void openTransportsScreen(){
         NavigationUtils.openActivity(this, Transports.class);

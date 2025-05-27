@@ -59,7 +59,7 @@ public class CoursesIntegrated extends AppCompatActivity {
             openModalitiesScreen();
             return true;
         } else if (id == R.id.menu_processo) {
-            abrirProcessoSeletivo();
+            openSelectionProcess();
             return true;
         }else if (id == R.id.menu_localizacao) {
             openTransportsScreen();
@@ -71,7 +71,7 @@ public class CoursesIntegrated extends AppCompatActivity {
             openOportunity();
             return true;
         }else if (id == R.id.menu_principal) {
-            openIfrsSite();
+            openMainScreen();
             return true;
         }
 // Outros itens do menu...
@@ -81,9 +81,8 @@ public class CoursesIntegrated extends AppCompatActivity {
     private void openModalitiesScreen() {
         NavigationUtils.openActivity(this, ModalitiesOffered.class);
     }
-
-    private void abrirProcessoSeletivo() {
-        // Implemente a navegação para o processo seletivo
+    private void openSelectionProcess() {
+        NavigationUtils.openActivity(this, SelectionProcess.class);
     }
     private void openIfrsSite() {
         NavigationUtils.openUrl(this, "https://ifrs.edu.br/rolante/");
@@ -97,7 +96,7 @@ public class CoursesIntegrated extends AppCompatActivity {
     private void openOportunity(){
         NavigationUtils.openActivity(this, Opportunities.class);
     }
-    public void openMainScreen(View v){
+    private void openMainScreen(){
         NavigationUtils.openActivity(this, MainActivity.class);
     }
 

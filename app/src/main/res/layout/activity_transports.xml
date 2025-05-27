@@ -41,7 +41,6 @@
                 android:layout_weight="1"
                 android:clickable="true"
                 android:fontFamily="@font/allerta"
-                android:onClick="openMainScreen"
                 android:paddingTop="8sp"
                 android:text="CAMPUS\nROLANTE"
                 android:textColor="@color/white"

@@ -49,7 +49,6 @@
                 android:textColor="@color/white"
                 android:textSize="28sp"
                 android:textStyle="bold"
-                android:onClick="openMainScreen"
                 android:clickable="true"/>
 
             <androidx.appcompat.widget.Toolbar

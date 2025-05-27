@@ -60,7 +60,7 @@ public class Transports extends AppCompatActivity {
             openCoursesScreen();
             return true;
         } else if (id == R.id.menu_processo) {
-            abrirProcessoSeletivo();
+            openSelectionProcess();
             return true;
         }else if (id == R.id.menu_localizacao) {
             openTransportsScreen();
@@ -72,7 +72,7 @@ public class Transports extends AppCompatActivity {
             openActivities();
             return true;
         }else if (id == R.id.menu_principal) {
-            openIfrsSite();
+            openMainScreen();
             return true;
         }
 
@@ -99,12 +99,11 @@ public class Transports extends AppCompatActivity {
     private void openOportunity(){
         NavigationUtils.openActivity(this, Opportunities.class);
     }
-
-    private void abrirProcessoSeletivo() {
-        // Implemente a navegação para o processo seletivo
+    private void openSelectionProcess() {
+        NavigationUtils.openActivity(this, SelectionProcess.class);
     }
 
-    public void openMainScreen(View v){
+    private void openMainScreen(){
         NavigationUtils.openActivity(this, MainActivity.class);
     }
     public void openCompany(View v){

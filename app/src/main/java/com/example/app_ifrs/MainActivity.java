@@ -9,6 +9,7 @@ import android.os.Bundle;
 
 import com.example.app_ifrs.adapters.ImageAdapter;
 
+import androidx.appcompat.view.menu.MenuBuilder;
 import androidx.appcompat.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -172,16 +173,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //------menu-----
-    private void setSupportActionBar() {
-        if (getSupportActionBar() != null) {
-            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-            getSupportActionBar().setHomeAsUpIndicator(R.drawable.menu);
-        }
-    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main_menu, menu);
+        if (menu instanceof MenuBuilder) {
+            MenuBuilder menuBuilder = (MenuBuilder) menu;
+            menuBuilder.setOptionalIconsVisible(true);
+        }
+
         return true;
     }
 
@@ -210,7 +210,7 @@ public class MainActivity extends AppCompatActivity {
             openAtctivities();
             return true;
         }else if (id == R.id.menu_principal) {
-            openIfrsSite();
+            openMainScreen();
             return true;
         }
 // Outros itens do menu...
@@ -227,9 +227,8 @@ public class MainActivity extends AppCompatActivity {
     private void openSelectionProcess() {
         NavigationUtils.openActivity(this, SelectionProcess.class);
     }
-
-    private void abrirProcessoSeletivo() {
-        // Implemente a navegação para o processo seletivo
+    private void openMainScreen(){
+        NavigationUtils.openActivity(this, MainActivity.class);
     }
     private void openAtctivities() {
         NavigationUtils.openActivity(this, ComplementaryActivities.class);

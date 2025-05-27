@@ -94,7 +94,7 @@ public class ComplementaryActivities extends AppCompatActivity {
             openCoursesScreen();
             return true;
         } else if (id == R.id.menu_processo) {
-            abrirProcessoSeletivo();
+            openSelectionProcess();
             return true;
         }else if (id == R.id.menu_localizacao) {
             openTransportsScreen();
@@ -106,7 +106,7 @@ public class ComplementaryActivities extends AppCompatActivity {
             openAtctivities();
             return true;
         }else if (id == R.id.menu_principal) {
-            openIfrsSite();
+            openMainScreen();
             return true;
         }
 
@@ -114,9 +114,6 @@ public class ComplementaryActivities extends AppCompatActivity {
 // Outros itens do menu...
         return super.onOptionsItemSelected(item);
     }
-
-
-
 
     private void openCoursesScreen() {
         NavigationUtils.openActivity(this, ModalitiesOffered.class);
@@ -134,12 +131,11 @@ public class ComplementaryActivities extends AppCompatActivity {
     private void openOprtunity(){
         NavigationUtils.openActivity(this, Opportunities.class);
     }
-
-    private void abrirProcessoSeletivo() {
-        // Implemente a navegação para o processo seletivo
+    private void openMainScreen(){
+        NavigationUtils.openActivity(this, MainActivity.class);
     }
 
-    public void openMainScreen(View v){
-        NavigationUtils.openActivity(this, MainActivity.class);
+    private void openSelectionProcess() {
+        NavigationUtils.openActivity(this, SelectionProcess.class);
     }
 }

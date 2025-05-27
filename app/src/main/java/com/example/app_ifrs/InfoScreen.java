@@ -62,10 +62,10 @@ public class InfoScreen extends AppCompatActivity {
             openCoursesScreen();
             return true;
         } else if (id == R.id.menu_processo) {
-            abrirProcessoSeletivo();
+            openSelectionProcess();
             return true;
         }else if (id == R.id.menu_localizacao) {
-            abrirProcessoSeletivo();
+            openTransportsScreen();
             return true;
         }else if (id == R.id.menu_bolsas) {
             openOportunity();
@@ -75,7 +75,7 @@ public class InfoScreen extends AppCompatActivity {
             openActivities();
             return true;
         }else if (id == R.id.menu_principal) {
-            openIfrsSite();
+            openMainScreen();
             return true;
         }
 // Outros itens do menu...
@@ -90,9 +90,8 @@ public class InfoScreen extends AppCompatActivity {
     private void openIfrsSite() {
         NavigationUtils.openUrl(this, "https://ifrs.edu.br/rolante/");
     }
-
-    private void abrirProcessoSeletivo() {
-        // Implemente a navegação para o processo seletivo
+    private void openSelectionProcess() {
+        NavigationUtils.openActivity(this, SelectionProcess.class);
     }
     private void openActivities() {
         NavigationUtils.openActivity(this,ComplementaryActivities.class);
@@ -104,7 +103,7 @@ public class InfoScreen extends AppCompatActivity {
         NavigationUtils.openActivity(this, Opportunities.class);
     }
 
-    public void openMainScreen(View v){
+    private void openMainScreen(){
         NavigationUtils.openActivity(this, MainActivity.class);
     }
 
