@@ -196,7 +196,7 @@ public class MainActivity extends AppCompatActivity {
             openCoursesScreen();
             return true;
         } else if (id == R.id.menu_processo) {
-            abrirProcessoSeletivo();
+            openSelectionProcess();
             return true;
         }else if (id == R.id.menu_bolsas) {
             openOportunity();
@@ -223,6 +223,9 @@ public class MainActivity extends AppCompatActivity {
     }
     private void openIfrsSite() {
         NavigationUtils.openUrl(this, "https://ifrs.edu.br/rolante/");
+    }
+    private void openSelectionProcess() {
+        NavigationUtils.openActivity(this, SelectionProcess.class);
     }
 
     private void abrirProcessoSeletivo() {

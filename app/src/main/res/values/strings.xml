@@ -67,4 +67,42 @@
     <string name="text_informations_extension">A extensão universitária conecta a instituição com a comunidade externa por meio de projetos, cursos, eventos e outras ações que buscam aplicar o conhecimento acadêmico em benefício da sociedade. Estudantes bolsistas atuam diretamente na organização e execução dessas atividades.</string>
     <string name="text_informations_search">Atividade voltada para a investigação científica, tecnológica ou social, desenvolvida sob a orientação de um professor. Os bolsistas participam da elaboração, execução e divulgação de projetos de pesquisa, ampliando sua formação acadêmica e contribuindo para a produção de conhecimento.</string>
     <string name="text_informations_integrated_actions">Conjunto de atividades que unem ensino, pesquisa e extensão, promovendo a formação integral dos estudantes. Essas ações visam resolver problemas reais, estimular a interdisciplinaridade e a atuação socialmente comprometida.</string>
+
+    ---------selection process-----------
+
+    <string name="formated_stages_selection_process">
+        <b>➊ Solicitar isenção da taxa</b>\n
+         -Para quem tem renda familiar de até 1 salário mínimo por pessoa.\n
+         -Detalhes no edital de isenção.\n\n
+        <b>➋ Ler os editais</b>\n
+         -Cada curso tem um edital próprio com informações importantes.\n\n
+        <b>➌ Fazer a inscrição</b>\n
+         -Pelo formulário eletrônico no site oficial.\n
+         -Necessário CPF, RG próprios e cadastro no portal gov.br.\n
+         -Pode pedir ajuda presencial no campus.\n\n
+        <b>➍ Pagar a taxa de inscrição</b>\n
+         -Se tiver direito e conseguir isenção, não precisa pagar.\n\n
+        <b>➎ Participar da prova</b> (se for a forma de ingresso escolhida)\n
+         -Detalhes como conteúdo e formato no edital.\n
+         -Provas anteriores e atividades preparatórias disponíveis no site.\n\n
+        <b>➏ Acompanhar listas de classificação e chamadas para matrícula</b>\n
+         -Publicadas no site oficial.\n
+         -Ficar atento às chamadas subsequentes, se houver.\n\n
+        <b>➐ Realizar a matrícula</b>\n
+         -Preenchimento e envio de documentos no sistema eletrônico informado.\n\n
+        <b>➑ Passar pela verificação étnico-racial</b> (se for o caso)\n
+         -Obrigatório para candidatos autodeclarados negros que optarem pelas cotas\n\n
+        <b>➒ Confirmar a aprovação da matrícula</b>\n
+         -Enviar documentos complementares, se necessário.\n
+         -Matrícula homologada após análise.\n\n
+        <b>➓ Informar-se sobre o início das aulas</b>\n
+         -Acompanhar orientações no site do campus.\n\n
+    </string>
+    <string name="formated_important_know">
+        -Todos os cursos são gratuitos.\n\n
+        -A inscrição pode ter uma taxa, com possibilidade de isenção.\n\n
+        -Todas as informações oficiais e atualizações são publicadas no site de ingresso do IFRS.\n\n
+        -<b>Para acessar os editais, esclarecer dúvidas e acompanhar todas as atualizações, consulte sempre o site oficial do Processo Seletivo IFRS.</b>\n
+    </string>
+
 </resources>
