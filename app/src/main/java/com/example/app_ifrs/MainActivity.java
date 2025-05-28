@@ -102,25 +102,24 @@ public class MainActivity extends AppCompatActivity {
 
         // Mapa com as cidades e seus respectivos links
         Map<String, String> citiesWithUrls = new LinkedHashMap<String, String>() {{
-            put("Alvorada", "https://www.alvorada.rs.gov.br");
-            put("Bento Gonçalves", "https://www.bentogoncalves.rs.gov.br");
-            put("Canoas", "https://www.canoas.rs.gov.br");
-            put("Caxias do Sul", "https://www.caxias.rs.gov.br");
-            put("Erechim", "https://www.erechim.rs.gov.br");
-            put("Farroupilha", "https://www.farroupilha.rs.gov.br");
-            put("Feliz", "https://www.feliz.rs.gov.br");
-            put("Ibirubá", "https://www.ibiruba.rs.gov.br");
-            put("Osório", "https://www.osorio.rs.gov.br");
-            put("Porto Alegre", "https://www.portoalegre.rs.gov.br");
-            put("Restinga", "https://www.restingaseca.rs.gov.br");
-            put("Rio Grande", "https://www.riogrande.rs.gov.br");
-            put("Rolante", "https://www.rolante.rs.gov.br");
-            put("Sertão", "https://www.sertao.rs.gov.br");
-            put("Vacaria", "https://www.vacaria.rs.gov.br");
-            put("Veranópolis", "https://www.veranopolis.rs.gov.br");
-            put("Viamão", "https://www.viamao.rs.gov.br");
-            put("Gramado", "https://www.gramado.rs.gov.br");
-            put("Zona Norte de Porto Alegre", "https://www.portoalegre.rs.gov.br/zona-norte");
+            put("Alvorada", "https://ifrs.edu.br/alvorada/");
+            put("Bento Gonçalves", "https://ifrs.edu.br/bento/");
+            put("Canoas", "https://ifrs.edu.br/canoas/");
+            put("Caxias do Sul", "https://ifrs.edu.br/caxias/");
+            put("Erechim", "https://ifrs.edu.br/erechim/");
+            put("Farroupilha", "https://ifrs.edu.br/farroupilha/");
+            put("Feliz", "https://ifrs.edu.br/feliz/");
+            put("Ibirubá", "https://ifrs.edu.br/ibiruba/");
+            put("Osório", "https://ifrs.edu.br/osorio/");
+            put("Porto Alegre", "https://poa.ifrs.edu.br/");
+            put("Restinga", "https://ifrs.edu.br/restinga/");
+            put("Rio Grande", "https://ifrs.edu.br/riogrande/");
+            put("Rolante", "https://ifrs.edu.br/rolante/");
+            put("Sertão", "https://ifrs.edu.br/sertao/");
+            put("Vacaria", "https://ifrs.edu.br/vacaria/");
+            put("Veranópolis", "https://ifrs.edu.br/veranopolis/");
+            put("Viamão", "https://ifrs.edu.br/viamao/");
+            put("Zona Norte de Porto Alegre", "https://ifrs.edu.br/zonanorte/");
         }};
 
         int index = 0;
