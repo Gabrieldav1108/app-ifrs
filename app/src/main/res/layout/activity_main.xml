@@ -84,7 +84,7 @@
                     android:layout_marginLeft="8sp"
                     android:layout_weight="1"
                     android:paddingTop="12sp"
-                    app:srcCompat="@drawable/paper_secundary" />
+                    app:srcCompat="@drawable/paper" />
 
                 <TextView
                     android:id="@+id/textView3"
@@ -120,8 +120,8 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:layout_marginTop="356dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="360dp"
             android:orientation="vertical"
             android:gravity="center_horizontal">
 
@@ -175,10 +175,10 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="215sp"
+        android:layout_marginTop="220sp"
         android:layout_marginRight="25sp"
         android:layout_marginLeft="25sp">
-        
+
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
             android:layout_height="match_parent"

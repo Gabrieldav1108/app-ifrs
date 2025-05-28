@@ -19,6 +19,7 @@ public class ImageAdapter extends RecyclerView.Adapter<ImageAdapter.ViewHolder> 
     private List<Integer> imageResources;
     private OnItemClickListener listener;
 
+
     public ImageAdapter(Context context, List<Integer> imageResources) {
         this.context = context;
         this.imageResources = imageResources;
@@ -39,9 +40,9 @@ public class ImageAdapter extends RecyclerView.Adapter<ImageAdapter.ViewHolder> 
                 .load(imageResources.get(position))
                 .into(holder.imageView);
 
-        holder.itemView.setOnClickListener(v -> {
+        holder.imageView.setOnClickListener(v -> {
             if (listener != null) {
-                listener.onClick(holder.imageView, String.valueOf(imageResources.get(position)));
+                listener.onItemClick(holder.imageView, imageResources.get(position));
             }
         });
     }
@@ -59,11 +60,11 @@ public class ImageAdapter extends RecyclerView.Adapter<ImageAdapter.ViewHolder> 
         }
     }
 
-    public void setOnItemClickListener(OnItemClickListener onItemClickListener) {
-        this.listener = onItemClickListener;
+    public interface OnItemClickListener {
+        void onItemClick(View view, int resId);
     }
 
-    public interface OnItemClickListener{
-        void onClick(ImageView imageView, String url);
+    public void setOnItemClickListener(OnItemClickListener listener) {
+        this.listener = listener;
     }
 }

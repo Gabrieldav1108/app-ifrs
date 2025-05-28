@@ -77,23 +77,25 @@ public class MainActivity extends AppCompatActivity {
 
         // Lista de IDs de recursos das imagens
         List<Integer> localImages = Arrays.asList(
-                R.drawable.logo_ifrs,
-                R.drawable.logo_ifrs,
-                R.drawable.logo_ifrs,
-                R.drawable.logo_ifrs
+                R.drawable.ifrs,
+                R.drawable.campus,
+                R.drawable.campus2,
+                R.drawable.balanco,
+                R.drawable.espaco_convivencia,
+                R.drawable.quadra,
+                R.drawable.lab_info
         );
 
         ImageAdapter adapter  = new ImageAdapter(MainActivity.this, localImages);
-        adapter.setOnItemClickListener((imageView, resId) -> {
+        adapter.setOnItemClickListener((view, resId) -> {
             Intent intent = new Intent(MainActivity.this, ImageViewActivity.class);
             intent.putExtra("image_res", resId);
 
-            ActivityOptions options = ActivityOptions
-                    .makeSceneTransitionAnimation(this, imageView, "image");
+            ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(
+                    MainActivity.this, view, "image");
 
             startActivity(intent, options.toBundle());
         });
-
         recyclerView.setAdapter(adapter);
 
         //---------links-----------

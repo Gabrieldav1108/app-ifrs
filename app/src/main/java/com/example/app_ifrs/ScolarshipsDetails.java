@@ -49,10 +49,13 @@ public class ScolarshipsDetails extends AppCompatActivity {
 
         // Lista de IDs de recursos das imagens
         List<Integer> localImages = Arrays.asList(
-                R.drawable.logo_ifrs,
-                R.drawable.logo_ifrs,
-                R.drawable.logo_ifrs,
-                R.drawable.logo_ifrs
+                R.drawable.bolsas1,
+                R.drawable.bolsas2,
+                R.drawable.bolsas3,
+                R.drawable.bolsas4,
+                R.drawable.bolsas5,
+                R.drawable.bolsas6,
+                R.drawable.bolsas7
         );
 
         ImageAdapter adapter  = new ImageAdapter(this, localImages);

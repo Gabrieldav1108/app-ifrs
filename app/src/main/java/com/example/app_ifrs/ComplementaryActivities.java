@@ -50,10 +50,11 @@ public class ComplementaryActivities extends AppCompatActivity {
 
         // Lista de IDs de recursos das imagens
         List<Integer> localImages = Arrays.asList(
-                R.drawable.logo_ifrs,
-                R.drawable.logo_ifrs,
-                R.drawable.logo_ifrs,
-                R.drawable.logo_ifrs
+                R.drawable.atvd1,
+                R.drawable.atvd2,
+                R.drawable.atvd3,
+                R.drawable.atvd4,
+                R.drawable.atvd5
         );
 
         ImageAdapter adapter  = new ImageAdapter(this, localImages);
