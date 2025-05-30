@@ -31,4 +31,9 @@
         android:icon="@drawable/ic_activities"
         android:title="Atividades Complementares"
         app:showAsAction="never"/>
+    <item
+        android:id="@+id/menu_sobre"
+        android:icon="@drawable/ic_about"
+        android:title="Sobre"
+        app:showAsAction="never"/>
 </menu>

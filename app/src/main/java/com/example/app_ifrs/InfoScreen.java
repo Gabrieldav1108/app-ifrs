@@ -83,6 +83,9 @@ public class InfoScreen extends AppCompatActivity {
         }else if (id == R.id.menu_principal) {
             openMainScreen();
             return true;
+        }else if (id == R.id.menu_sobre) {
+            openDeveloperTeam();
+            return true;
         }
 // Outros itens do menu...
         return super.onOptionsItemSelected(item);
@@ -92,6 +95,9 @@ public class InfoScreen extends AppCompatActivity {
 
     private void openCoursesScreen() {
         NavigationUtils.openActivity(this, ModalitiesOffered.class);
+    }
+    private void openDeveloperTeam() {
+        NavigationUtils.openActivity(this, DeveloperTeam.class);
     }
     private void openIfrsSite() {
         NavigationUtils.openUrl(this, "https://ifrs.edu.br/rolante/");

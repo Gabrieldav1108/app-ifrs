@@ -38,12 +38,6 @@ public class AgroScreen extends AppCompatActivity {
     }
 
     //------menu-----
-    private void setSupportActionBar() {
-        if (getSupportActionBar() != null) {
-            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-            getSupportActionBar().setHomeAsUpIndicator(R.drawable.menu);
-        }
-    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -82,6 +76,9 @@ public class AgroScreen extends AppCompatActivity {
         }else if (id == R.id.menu_principal) {
             openMainScreen();
             return true;
+        }else if (id == R.id.menu_sobre) {
+            openDeveloperTeam();
+            return true;
         }
 // Outros itens do menu...
         return super.onOptionsItemSelected(item);
@@ -91,6 +88,9 @@ public class AgroScreen extends AppCompatActivity {
 
     private void openCoursesScreen() {
         NavigationUtils.openActivity(this, ModalitiesOffered.class);
+    }
+    private void openDeveloperTeam() {
+        NavigationUtils.openActivity(this, DeveloperTeam.class);
     }
     private void openSelectionProcess() {
         NavigationUtils.openActivity(this, SelectionProcess.class);
@@ -110,6 +110,7 @@ public class AgroScreen extends AppCompatActivity {
     private void openOprtunity(){
         NavigationUtils.openActivity(this, Opportunities.class);
     }
+
     public void openAgroSite(View v){
         NavigationUtils.openUrl(this, "https://ifrs.edu.br/rolante/ensino/curso-tecnico-em-agropecuaria-integrado-ao-ensino-medio/");
     }

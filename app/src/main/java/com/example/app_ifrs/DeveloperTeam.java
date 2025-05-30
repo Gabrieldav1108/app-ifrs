@@ -1,11 +1,10 @@
 package com.example.app_ifrs;
 
-import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
+import android.view.RoundedCorner;
+import android.widget.ImageView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,13 +14,17 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class AdmScreen extends AppCompatActivity {
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.resource.bitmap.RoundedCorners;
+import com.bumptech.glide.request.RequestOptions;
+
+public class DeveloperTeam extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_adm_screen);
+        setContentView(R.layout.activity_developer_team);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -38,14 +41,7 @@ public class AdmScreen extends AppCompatActivity {
             getSupportActionBar().setHomeAsUpIndicator(R.drawable.menu);
         }
     }
-
     //------menu-----
-    private void setSupportActionBar() {
-        if (getSupportActionBar() != null) {
-            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-            getSupportActionBar().setHomeAsUpIndicator(R.drawable.menu);
-        }
-    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -79,7 +75,7 @@ public class AdmScreen extends AppCompatActivity {
             return true;
         }
         else if (id == R.id.menu_atividades) {
-            openAtctivities();
+            openActivities();
             return true;
         }else if (id == R.id.menu_principal) {
             openMainScreen();
@@ -97,34 +93,25 @@ public class AdmScreen extends AppCompatActivity {
     private void openCoursesScreen() {
         NavigationUtils.openActivity(this, ModalitiesOffered.class);
     }
-    private void openIfrsSite() {
-        NavigationUtils.openUrl(this, "https://ifrs.edu.br/rolante/");
-    }
     private void openDeveloperTeam() {
         NavigationUtils.openActivity(this, DeveloperTeam.class);
     }
     private void openSelectionProcess() {
         NavigationUtils.openActivity(this, SelectionProcess.class);
     }
-    public void openMainScreen(){
-        NavigationUtils.openActivity(this, MainActivity.class);
+    private void openIfrsSite() {
+        NavigationUtils.openUrl(this, "https://ifrs.edu.br/rolante/");
     }
-
-    public void openAdmSite(View v){
-        NavigationUtils.openUrl(this, "https://ifrs.edu.br/rolante/ensino/curso-tecnico-em-administracao-integrado-ao-ensino-medio/ ");
-    }
-
-    public void openOuthersCourses(View v){
-        NavigationUtils.openActivity(this, ListCourses.class);
-    }
-    private void openAtctivities() {
+    private void openActivities() {
         NavigationUtils.openActivity(this, ComplementaryActivities.class);
     }
     private void openTransportsScreen(){
         NavigationUtils.openActivity(this, Transports.class);
     }
+    private void openMainScreen(){
+        NavigationUtils.openActivity(this, MainActivity.class);
+    }
     private void openOprtunity(){
         NavigationUtils.openActivity(this, Opportunities.class);
     }
-
 }

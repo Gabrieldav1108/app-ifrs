@@ -213,6 +213,9 @@ public class MainActivity extends AppCompatActivity {
         }else if (id == R.id.menu_principal) {
             openMainScreen();
             return true;
+        }else if (id == R.id.menu_sobre) {
+            openDeveloperTeam();
+            return true;
         }
 // Outros itens do menu...
         return super.onOptionsItemSelected(item);
@@ -221,6 +224,9 @@ public class MainActivity extends AppCompatActivity {
     private void openCoursesScreen() {
         Intent intent = new Intent(MainActivity.this, ModalitiesOffered.class);
         startActivity(intent);
+    }
+    private void openDeveloperTeam() {
+        NavigationUtils.openActivity(this, DeveloperTeam.class);
     }
     private void openIfrsSite() {
         NavigationUtils.openUrl(this, "https://ifrs.edu.br/rolante/");

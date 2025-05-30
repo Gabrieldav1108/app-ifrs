@@ -6,7 +6,7 @@
     <solid android:color="@color/green_primary" /> <!-- Troque pela cor desejada -->
 
     <!-- Arredondamento dos cantos -->
-    <corners android:radius="16dp" />
+    <corners android:radius="10dp" />
 
     <!-- Borda -->
     <stroke

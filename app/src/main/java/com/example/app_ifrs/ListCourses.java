@@ -160,6 +160,9 @@ public class ListCourses extends AppCompatActivity {
         }else if (id == R.id.menu_principal) {
             openMainScreen();
             return true;
+        }else if (id == R.id.menu_sobre) {
+            openDeveloperTeam();
+            return true;
         }
 // Outros itens do menu...
         return super.onOptionsItemSelected(item);
@@ -172,6 +175,9 @@ public class ListCourses extends AppCompatActivity {
     }
     private void openIfrsSite() {
         NavigationUtils.openUrl(this, "https://ifrs.edu.br/rolante/");
+    }
+    private void openDeveloperTeam() {
+        NavigationUtils.openActivity(this, DeveloperTeam.class);
     }
 
     private void openSelectionProcess() {

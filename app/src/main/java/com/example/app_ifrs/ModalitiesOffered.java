@@ -79,6 +79,9 @@ public class ModalitiesOffered extends AppCompatActivity {
         }else if (id == R.id.menu_principal) {
             openMainScreen();
             return true;
+        }else if (id == R.id.menu_sobre) {
+            openDeveloperTeam();
+            return true;
         }
 // Outros itens do menu...
         return super.onOptionsItemSelected(item);
@@ -92,6 +95,9 @@ public class ModalitiesOffered extends AppCompatActivity {
     }
     private void openActivities() {
         NavigationUtils.openActivity(this, ComplementaryActivities.class);
+    }
+    private void openDeveloperTeam() {
+        NavigationUtils.openActivity(this, DeveloperTeam.class);
     }
     private void openIfrsSite() {
         NavigationUtils.openUrl(this, "https://ifrs.edu.br/rolante/");

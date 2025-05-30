@@ -104,5 +104,20 @@
         -Todas as informações oficiais e atualizações são publicadas no site de ingresso do IFRS.\n\n
         -<b>Para acessar os editais, esclarecer dúvidas e acompanhar todas as atualizações, consulte sempre o site oficial do Processo Seletivo IFRS.</b>\n
     </string>
-
+    <string name="formated_info_julio">
+        Nome: Julio R. Sant\'Ana \n
+        Turma: Informática 4 - 2022
+    </string>
+    <string name="formated_info_gabriel">
+        Nome: Gabriel S. D\'Avila\n
+        Turma: Informática 4 - 2022
+    </string>
+    <string name="formated_info_gustavo">
+        Nome: Gustavo S. de Oliveira\n
+        Turma: Informática 4 - 2022
+    </string>
+    <string name="formated_info_victor">
+        Nome:  Victor da Cruz Peres\n
+        Turma: M.Sc. em SI
+    </string>
 </resources>

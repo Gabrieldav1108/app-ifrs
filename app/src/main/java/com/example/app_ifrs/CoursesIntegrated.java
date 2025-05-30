@@ -79,6 +79,9 @@ public class CoursesIntegrated extends AppCompatActivity {
         }else if (id == R.id.menu_principal) {
             openMainScreen();
             return true;
+        }else if (id == R.id.menu_sobre) {
+            openDeveloperTeam();
+            return true;
         }
 // Outros itens do menu...
         return super.onOptionsItemSelected(item);
@@ -86,6 +89,9 @@ public class CoursesIntegrated extends AppCompatActivity {
 
     private void openModalitiesScreen() {
         NavigationUtils.openActivity(this, ModalitiesOffered.class);
+    }
+    private void openDeveloperTeam() {
+        NavigationUtils.openActivity(this, DeveloperTeam.class);
     }
     private void openSelectionProcess() {
         NavigationUtils.openActivity(this, SelectionProcess.class);
