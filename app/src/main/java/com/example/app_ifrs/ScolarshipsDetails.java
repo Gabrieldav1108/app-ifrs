@@ -21,6 +21,8 @@ import com.google.android.material.carousel.CarouselLayoutManager;
 import java.util.Arrays;
 import java.util.List;
 
+import Helpers.NavigationUtils;
+
 public class ScolarshipsDetails extends AppCompatActivity {
 
     @Override

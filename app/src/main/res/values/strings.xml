@@ -4,10 +4,10 @@
     <string name="formated_text_concomitants_EM"><b>Técnicos concomitantes ao Ensino Médio</b> – formação técnica profissional para os alunos que estão cursando o Ensino Médio e desejam complementar a formação em turno inverso.</string>
     <string name="formated_text_subsequent_EM"><b>Técnicos subsequentes ao Ensino Médio</b> – formação técnica profissional para os alunos que já concluíram o Ensino Médio.</string>
     <string name="formated_text_superiors"><b>Superiores de tecnologia</b> – cursos superiores cuja vocação é atender a demandas específicas do mundo do trabalho. Quem conclui é profissional de nível superior, denominado tecnólogo.</string>
-    <string name="formated_text_integrated_courses"> Instituto Federal do Rio Grande do Sul (IFRS) Campus Rolante  oferece três cursos <b>Técnicos Integrados ao Ensino Médio</b> sendo eles <b>Técnico em Adminstração</b>, <b>Técnico em Agropecuária</b> e <b>Técnico em Informática</b>, que unem a formação do Ensino Médio com uma qualificação técnica profissional. Essa modalidade prepara o estudante para o mercado de trabalho e para o ingresso no ensino superior. Ao concluir o curso, o aluno recebe tanto o diploma do Ensino Médio quanto o do curso técnico.</string>
-    <string name="formated_text_adm"> O curso técnico em Administração forma profissionais aptos a atuar em diversas áreas de uma empresa, como finanças, recursos humanos, marketing e logística. Durante o curso, o aluno aprende na prática a organizar, planejar e controlar processos administrativos, desenvolvendo habilidades importantes para o mundo do trabalho.</string>
-    <string name="formated_text_agro"> O curso técnico em Agropecuária prepara o estudante para trabalhar com a produção rural, manejando animais, cultivando plantas e operando máquinas agrícolas. O curso combina teoria e prática, formando profissionais prontos para atuar no campo com técnicas modernas e sustentáveis.</string>
-    <string name="formated_text_info"> O curso técnico em Informática forma profissionais capacitados para desenvolver, manter e dar suporte a sistemas e redes de computadores. O aluno aprende programação, banco de dados, hardware, redes e lógica computacional, estando preparado para atuar no setor de tecnologia.</string>
+    <string name="formated_text_integrated_courses">\t O Instituto Federal do Rio Grande do Sul (IFRS) Campus Rolante  oferece três cursos <b>Técnicos Integrados ao Ensino Médio</b> sendo eles <b>Técnico em Adminstração</b>, <b>Técnico em Agropecuária</b> e <b>Técnico em Informática</b>, que unem a formação do Ensino Médio com uma qualificação técnica profissional. Essa modalidade prepara o estudante para o mercado de trabalho e para o ingresso no ensino superior. Ao concluir o curso, o aluno recebe tanto o diploma do Ensino Médio quanto o do curso técnico.</string>
+    <string name="formated_text_adm">   O curso técnico em Administração forma profissionais aptos a atuar em diversas áreas de uma empresa, como finanças, recursos humanos, marketing e logística. Durante o curso, o aluno aprende na prática a organizar, planejar e controlar processos administrativos, desenvolvendo habilidades importantes para o mundo do trabalho.</string>
+    <string name="formated_text_agro">  O curso técnico em Agropecuária prepara o estudante para trabalhar com a produção rural, manejando animais, cultivando plantas e operando máquinas agrícolas. O curso combina teoria e prática, formando profissionais prontos para atuar no campo com técnicas modernas e sustentáveis.</string>
+    <string name="formated_text_info">  O curso técnico em Informática forma profissionais capacitados para desenvolver, manter e dar suporte a sistemas e redes de computadores. O aluno aprende programação, banco de dados, hardware, redes e lógica computacional, estando preparado para atuar no setor de tecnologia.</string>
     <string name="formated_text_transport"> O IFRS Campus Rolante necessita de transporte para o deslocamento dos estudantes, que pode ser realizado por <b>empresas privadas, pelo transporte público municipal de Rolante(gratuito)</b> — dependendo da disponibilidade de linhas, horários e itinerários — ou ainda pelo transporte da Citral, que <b>pode ser gratuito</b> conforme determinadas condições. Para mais informações sobre o <b>Passe Livre da Citral e como utilizá-lo</b> para ter acesso ao transporte gratuito, clique no botão abaixo e selecione a opção correspondente.</string>
     <string name="formated_text_free_pass"> O IFRS Campus Rolante oferece a possibilidade de transporte intermunicipal para os estudantes, realizado pela empresa <b>Citral</b>. Esse serviço facilita o acesso ao campus, especialmente para quem mora em outros municípios e possui dificuldades financeiras.
         <b>Estudantes em situação de vulnerabilidade</b> podem ter direito ao <b>Passe Livre Estudantil</b>, que garante a <b>gratuidade</b> no transporte intermunicipal, conforme regras do programa</string>
@@ -119,5 +119,29 @@
     <string name="formated_info_victor">
         Nome:  Victor da Cruz Peres\n
         Turma: M.Sc. em SI
+    </string>
+    <string name="formated_info_adm">
+        <b>Modalidade:</b> presencial\n
+        <b>Duração do curso:</b> 8 semestres (4 anos)\n
+        <b>Turno de funcionamento das turmas:</b> manhã e tarde\n
+        <b>Número de vagas:</b> 35 (manhã) e 35 (tarde)\n
+        <b>Coordenação do curso:</b> Carlos Alberto Steinmetz\n
+        <b>E-mail:</b> administracao@rolante.ifrs.edu.br
+    </string>
+    <string name="formated_info_agro">
+        <b>Modalidade:</b> presencial\n
+        <b>Duração do curso:</b> 8 semestres (4 anos)\n
+        <b>Turno de funcionamento das turmas:</b> manhã e tarde\n
+        <b>Número de vagas:</b> 35 (manhã) e 35 (tarde)\n
+        <b>Coordenação do curso:</b> Josmael Corso\n
+        <b>E-mail:</b> agropecuaria@rolante.ifrs.edu.br
+    </string>
+    <string name="formated_info_info">
+        <b>Modalidade:</b> presencial\n
+        <b>Duração do curso:</b> 8 semestres (4 anos)\n
+        <b>Turno de funcionamento das turmas:</b> manhã e tarde\n
+        <b>Número de vagas:</b> 35 (manhã) e 35 (tarde)\n
+        <b>Coordenação do curso:</b> Fábio Zschornack\n
+        <b>E-mail:</b> informatica@rolante.ifrs.edu.br
     </string>
 </resources>

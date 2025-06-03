@@ -3,11 +3,8 @@ package com.example.app_ifrs;
 import android.net.Uri;
 import android.os.Bundle;
 import android.content.Intent;
-import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ExpandableListView;
 import android.widget.TextView;
@@ -20,7 +17,6 @@ import java.util.List;
 import java.util.Map;
 
 import androidx.activity.EdgeToEdge;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.view.menu.MenuBuilder;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.graphics.Insets;
@@ -28,6 +24,8 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.example.app_ifrs.adapters.CourseListAdapter;
+
+import Helpers.NavigationUtils;
 
 
 public class ListCourses extends AppCompatActivity {

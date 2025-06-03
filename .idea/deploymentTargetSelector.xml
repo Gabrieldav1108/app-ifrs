@@ -4,10 +4,10 @@
     <selectionStates>
       <SelectionState runConfigName="app">
         <option name="selectionMode" value="DROPDOWN" />
-        <DropdownSelection timestamp="2025-05-24T17:42:02.811930500Z">
+        <DropdownSelection timestamp="2025-06-03T22:01:53.586280500Z">
           <Target type="DEFAULT_BOOT">
             <handle>
-              <DeviceId pluginId="PhysicalDevice" identifier="serial=RXCX600JPWR" />
+              <DeviceId pluginId="LocalEmulator" identifier="path=C:\Users\User\.android\avd\New_Device_API_26.ini" />
             </handle>
           </Target>
         </DropdownSelection>

@@ -1,11 +1,9 @@
 package com.example.app_ifrs;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,10 +13,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.Locale;
-import java.util.TimeZone;
+import Helpers.NavigationUtils;
 
 public class CoursesIntegrated extends AppCompatActivity {
 
@@ -113,18 +108,66 @@ public class CoursesIntegrated extends AppCompatActivity {
     }
 
     public void openAdmScreen(View v){
-        NavigationUtils.openActivity(this, AdmScreen.class);
+        v.animate()
+                .scaleX(0.95f)
+                .scaleY(0.95f)
+                .setDuration(100)
+                .withEndAction(() -> {
+                    v.animate()
+                            .scaleX(1f)
+                            .scaleY(1f)
+                            .setDuration(100)
+                            .start();
+                    NavigationUtils.openActivity(this, AdmScreen.class);
+                })
+                .start();
     }
 
     public void openAgroScreen(View v){
-        NavigationUtils.openActivity(this, AgroScreen.class);
+        v.animate()
+                .scaleX(0.95f)
+                .scaleY(0.95f)
+                .setDuration(100)
+                .withEndAction(() -> {
+                    v.animate()
+                            .scaleX(1f)
+                            .scaleY(1f)
+                            .setDuration(100)
+                            .start();
+                    NavigationUtils.openActivity(this, AgroScreen.class);
+                })
+                .start();
     }
 
     public void openInfoScreen(View v){
-        NavigationUtils.openActivity(this, InfoScreen.class);
+        v.animate()
+                .scaleX(0.95f)
+                .scaleY(0.95f)
+                .setDuration(100)
+                .withEndAction(() -> {
+                    v.animate()
+                            .scaleX(1f)
+                            .scaleY(1f)
+                            .setDuration(100)
+                            .start();
+                    NavigationUtils.openActivity(this, InfoScreen.class);
+                })
+                .start();
     }
     public void openOuthersCourses(View v){
-        NavigationUtils.openActivity(this, ListCourses.class);
+        v.animate()
+                .scaleX(0.95f)
+                .scaleY(0.95f)
+                .setDuration(100)
+                .withEndAction(() -> {
+                    v.animate()
+                            .scaleX(1f)
+                            .scaleY(1f)
+                            .setDuration(100)
+                            .start();
+                    NavigationUtils.openActivity(this, ListCourses.class);
+                })
+                .start();
     }
 
 }

@@ -3,8 +3,6 @@ package com.example.app_ifrs;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.RoundedCorner;
-import android.widget.ImageView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,9 +12,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.load.resource.bitmap.RoundedCorners;
-import com.bumptech.glide.request.RequestOptions;
+import Helpers.NavigationUtils;
 
 public class DeveloperTeam extends AppCompatActivity {
 

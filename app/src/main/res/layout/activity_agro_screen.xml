@@ -99,69 +99,104 @@
             android:background="@drawable/more_rounded_border"
             />
 
-        <LinearLayout
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/rounded_border_green"
-            android:layout_marginTop="30dp"
-            android:padding="10dp"
-            android:orientation="vertical"
-            >
-            <FrameLayout
-                android:layout_width="100dp"
-                android:layout_height="65dp"
-                android:background="@drawable/rounded_border_blue_full"
-                android:padding="5dp"
-                >
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/logo_agro_recorted"
-                    />
-            </FrameLayout>
-
-            <TextView
+            android:layout_height="match_parent">
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/formated_text_agro"
-                android:fontFamily="@font/alata"
-                android:textColor="@color/white"
-                android:textSize="16sp"
-                android:padding="8dp"
-                />
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_border_green"
+                    android:layout_marginTop="30dp"
+                    android:padding="10dp"
+                    android:orientation="vertical"
+                    >
+                    <FrameLayout
+                        android:layout_width="70dp"
+                        android:layout_height="45dp"
+                        android:background="@drawable/rounded_border_blue_full"
+                        android:padding="5dp"
+                        >
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/logo_agro_recorted"
+                            />
+                    </FrameLayout>
 
-        </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/formated_text_agro"
+                        android:fontFamily="@font/alata"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:padding="8dp"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="15dp">
 
-        <com.google.android.flexbox.FlexboxLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="30dp"
-            app:flexWrap="nowrap"
-            app:justifyContent="space_between"
-            app:alignItems="center">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Informações Técnicas"
+                        android:fontFamily="@font/alata"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:background="@drawable/rounded_border_green"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/alata"
+                        android:textAlignment="viewStart"
+                        android:gravity="start"
+                        android:typeface="monospace"
+                        android:text="@string/formated_info_agro"/>
+                </LinearLayout>
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                style="@style/BlueButton"
-                android:textSize="12sp"
-                android:background="@drawable/rounded_border_blue_full"
-                android:text="Acesse o site"
-                android:textStyle="bold"
-                android:onClick="openAgroSite"
-                />
+                <com.google.android.flexbox.FlexboxLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="30dp"
+                    app:flexWrap="nowrap"
+                    app:justifyContent="space_between"
+                    app:alignItems="center">
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                style="@style/BlueButton"
-                android:textSize="12sp"
-                android:background="@drawable/rounded_border_blue_full"
-                android:text="outros cursos"
-                android:textStyle="bold"
-                android:onClick="openOuthersCourses"
-                />
-        </com.google.android.flexbox.FlexboxLayout>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/BlueButton"
+                        android:textSize="12sp"
+                        android:background="@drawable/rounded_border_blue_full"
+                        android:text="Acesse o site"
+                        android:textStyle="bold"
+                        android:onClick="openAgroSite"
+                        />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/BlueButton"
+                        android:textSize="12sp"
+                        android:background="@drawable/rounded_border_blue_full"
+                        android:text="outros cursos"
+                        android:textStyle="bold"
+                        android:onClick="openOuthersCourses"
+                        />
+                </com.google.android.flexbox.FlexboxLayout>
+            </LinearLayout>
+        </ScrollView>
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

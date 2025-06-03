@@ -101,15 +101,15 @@
 
         <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="320dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:background="@drawable/rounded_border_green"
-            android:padding="12dp">
+            android:background="@drawable/rounded_border_green">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:breakStrategy="balanced"
+                android:padding="18dp"
                 android:ellipsize="none"
                 android:fontFamily="@font/alata"
                 android:hyphenationFrequency="normal"
@@ -122,36 +122,95 @@
                 android:textSize="15sp"
                 android:layout_gravity="center"/>
         </FrameLayout>
-
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selecione seu curso de interesse:"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/alata"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            />
         <com.google.android.flexbox.FlexboxLayout
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="75dp">
 
-            <ImageView
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@drawable/logo_adm"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_border_blue_full"
+                android:layout_marginEnd="10dp"
+                android:orientation="vertical"
                 android:onClick="openAdmScreen"
-                />
-            <ImageView
+                android:padding="8dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:text="Administração"
+                    android:textSize="11dp"
+                    android:fontFamily="@font/alata" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/logo_adm_recorted"
+                    android:padding="5dp"/>
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@drawable/logo_agro"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_border_blue_full"
+                android:layout_marginEnd="10dp"
+                android:orientation="vertical"
                 android:onClick="openAgroScreen"
-                />
-            <ImageView
+                android:padding="8dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:text="Agropecuária"
+                    android:textSize="11dp"
+                    android:fontFamily="@font/alata" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/logo_agro_recorted"
+                    android:padding="5dp"/>
+            </LinearLayout>
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_border_blue_full"
+                android:orientation="vertical"
                 android:onClick="openInfoScreen"
-                android:src="@drawable/logo_info"
-                />
+                android:padding="8dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:text="Informática"
+                    android:textSize="11dp"
+                    android:fontFamily="@font/alata" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/logo_info_recorted"
+                    android:padding="5dp"/>
+            </LinearLayout>
+
 
         </com.google.android.flexbox.FlexboxLayout>
 
         <com.google.android.flexbox.FlexboxLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
             app:justifyContent="flex_end"
             app:alignItems="center">
             <Button

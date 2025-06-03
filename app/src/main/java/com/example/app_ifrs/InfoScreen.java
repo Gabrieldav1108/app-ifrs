@@ -13,6 +13,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import Helpers.NavigationUtils;
+
 public class InfoScreen extends AppCompatActivity {
 
     @Override

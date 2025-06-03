@@ -1,12 +1,12 @@
-package com.example.app_ifrs;
+package Helpers;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.view.View;
 
-import androidx.core.app.ActivityOptionsCompat;
+import com.example.app_ifrs.InfoScreen;
+import com.example.app_ifrs.MainActivity;
 
 public class NavigationUtils {
     public static void openActivity(Context context, Class<?> destination) {
@@ -18,4 +18,5 @@ public class NavigationUtils {
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
         context.startActivity(intent);
     }
+
 }
