@@ -305,7 +305,7 @@
                             android:layout_gravity="center"
                             android:layout_width="200dp"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/rmb_icon"
+                            android:src="@drawable/logo_mw"
                             />
                     </com.google.android.flexbox.FlexboxLayout>
                     <com.google.android.flexbox.FlexboxLayout
@@ -317,7 +317,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="RBM Transportes"
+                            android:text="MW Turismo"
                             android:textColor="@color/white"
                             android:fontFamily="@font/alata"
                             android:textStyle="bold"
@@ -330,7 +330,7 @@
                             android:textColor="@color/white"
                             android:background="@drawable/rounded_border_blue_full"
                             android:padding="5dp"
-                            android:text="@string/formated_informations_rbm"
+                            android:text="@string/formated_informations_mw"
                             />
                     </com.google.android.flexbox.FlexboxLayout>
 
@@ -339,7 +339,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
                     app:flexDirection="row"
-                    android:layout_marginBottom="20dp"
+                    android:paddingBottom="20dp"
                     >
                     <com.google.android.flexbox.FlexboxLayout
                         android:layout_width="200dp"
@@ -350,19 +350,20 @@
                             android:layout_gravity="center"
                             android:layout_width="200dp"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/rmb_icon"
+                            android:src="@drawable/dc_icon"
                             />
                     </com.google.android.flexbox.FlexboxLayout>
                     <com.google.android.flexbox.FlexboxLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         app:flexDirection="column"
+                        android:layout_marginBottom="15dp"
                         android:layout_marginStart="20dp"
                         >
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="RBM Transportes"
+                            android:text="DC Turismo"
                             android:textColor="@color/white"
                             android:fontFamily="@font/alata"
                             android:textStyle="bold"
@@ -375,7 +376,7 @@
                             android:textColor="@color/white"
                             android:background="@drawable/rounded_border_blue_full"
                             android:padding="5dp"
-                            android:text="@string/formated_informations_rbm"
+                            android:text="@string/formated_informations_dc"
                             />
                     </com.google.android.flexbox.FlexboxLayout>
 

@@ -49,7 +49,16 @@
     </string>
     <string name="formated_informations_salvador">
         Telefone: (51) 97072829\n
+        Cidades: Parobé, Taquara, Igrejinha
+    </string>
+    <string name="formated_informations_mw">
+        Telefone: (51) 997796900\n
+        Email: mwturismo@tca.com.br\n
         Cidades: Rolante
+    </string>
+    <string name="formated_informations_dc">
+        Telefone: (51) 996466420\n
+        Cidades: Parobé, Taquara
     </string>
     <string name="formated_informations_scholarships">
         O <b>IFRS – Campus Rolante</b> oferece diversas oportunidades para você se envolver em atividades que vão além da sala de aula! São bolsas para Monitoria, Tutoria, Extensão, Pesquisa, Ações Integradas e Apoio Técnico.\n
