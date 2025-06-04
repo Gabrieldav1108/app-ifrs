@@ -80,6 +80,9 @@ public class CoursesIntegrated extends AppCompatActivity {
         }else if (id == R.id.menu_obras) {
             openContructionInProgress();
             return true;
+        }else if (id == R.id.menu_prova) {
+            openExamGuide();
+            return true;
         }
 // Outros itens do menu...
         return super.onOptionsItemSelected(item);
@@ -87,6 +90,9 @@ public class CoursesIntegrated extends AppCompatActivity {
 
     private void openModalitiesScreen() {
         NavigationUtils.openActivity(this, ModalitiesOffered.class);
+    }
+    private void openExamGuide() {
+        NavigationUtils.openActivity(this, ExamGuide.class);
     }
     private void openContructionInProgress() {
         NavigationUtils.openActivity(this, ConstructionInProgress.class);

@@ -84,6 +84,9 @@ public class AgroScreen extends AppCompatActivity {
         }else if (id == R.id.menu_obras) {
             openContructionInProgress();
             return true;
+        }else if (id == R.id.menu_prova) {
+            openExamGuide();
+            return true;
         }
 // Outros itens do menu...
         return super.onOptionsItemSelected(item);
@@ -93,6 +96,9 @@ public class AgroScreen extends AppCompatActivity {
 
     private void openCoursesScreen() {
         NavigationUtils.openActivity(this, ModalitiesOffered.class);
+    }
+    private void openExamGuide() {
+        NavigationUtils.openActivity(this, ExamGuide.class);
     }
     private void openDeveloperTeam() {
         NavigationUtils.openActivity(this, DeveloperTeam.class);

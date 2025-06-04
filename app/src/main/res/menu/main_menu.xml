@@ -17,6 +17,11 @@
         android:title="Processo Seletivo"
         app:showAsAction="never"/>
     <item
+        android:id="@+id/menu_prova"
+        android:icon="@drawable/ic_exam"
+        android:title="Guia da Prova"
+        app:showAsAction="never"/>
+    <item
         android:id="@+id/menu_localizacao"
         android:icon="@drawable/ic_location"
         android:title="Transporte"

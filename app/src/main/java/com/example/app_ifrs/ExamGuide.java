@@ -15,20 +15,18 @@ import androidx.core.view.WindowInsetsCompat;
 
 import Helpers.NavigationUtils;
 
-public class InfoScreen extends AppCompatActivity {
+public class ExamGuide extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_info_screen);
+        setContentView(R.layout.activity_exam_guide);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-
-
         //-------menu--------
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -39,7 +37,6 @@ public class InfoScreen extends AppCompatActivity {
             getSupportActionBar().setHomeAsUpIndicator(R.drawable.menu);
         }
     }
-
     //------menu-----
     private void setSupportActionBar() {
         if (getSupportActionBar() != null) {
@@ -72,18 +69,19 @@ public class InfoScreen extends AppCompatActivity {
         } else if (id == R.id.menu_processo) {
             openSelectionProcess();
             return true;
-        }else if (id == R.id.menu_localizacao) {
-            openTransportsScreen();
-            return true;
         }else if (id == R.id.menu_bolsas) {
             openOportunity();
             return true;
         }
+        else if (id == R.id.menu_localizacao) {
+            openTransportsScreen();
+            return true;
+        }
         else if (id == R.id.menu_atividades) {
-            openActivities();
+            openAtctivities();
             return true;
         }else if (id == R.id.menu_principal) {
-            openMainScreen();
+            openIfrsSite();
             return true;
         }else if (id == R.id.menu_sobre) {
             openDeveloperTeam();
@@ -99,16 +97,14 @@ public class InfoScreen extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-
-
     private void openCoursesScreen() {
         NavigationUtils.openActivity(this, ModalitiesOffered.class);
     }
     private void openExamGuide() {
         NavigationUtils.openActivity(this, ExamGuide.class);
     }
-    private void openDeveloperTeam() {
-        NavigationUtils.openActivity(this, DeveloperTeam.class);
+    private void openContructionInProgress() {
+        NavigationUtils.openActivity(this, ConstructionInProgress.class);
     }
     private void openIfrsSite() {
         NavigationUtils.openUrl(this, "https://ifrs.edu.br/rolante/");
@@ -116,11 +112,11 @@ public class InfoScreen extends AppCompatActivity {
     private void openSelectionProcess() {
         NavigationUtils.openActivity(this, SelectionProcess.class);
     }
-    private void openContructionInProgress() {
-        NavigationUtils.openActivity(this, ConstructionInProgress.class);
+    private void openDeveloperTeam() {
+        NavigationUtils.openActivity(this, DeveloperTeam.class);
     }
-    private void openActivities() {
-        NavigationUtils.openActivity(this,ComplementaryActivities.class);
+    private void openAtctivities() {
+        NavigationUtils.openActivity(this, ComplementaryActivities.class);
     }
     private void openTransportsScreen(){
         NavigationUtils.openActivity(this, Transports.class);
@@ -128,16 +124,10 @@ public class InfoScreen extends AppCompatActivity {
     private void openOportunity(){
         NavigationUtils.openActivity(this, Opportunities.class);
     }
-
-    private void openMainScreen(){
-        NavigationUtils.openActivity(this, MainActivity.class);
+    public void openIngressoIfrs(View v){
+        NavigationUtils.openUrl(this, "https://ingresso.ifrs.edu.br/2025-2/");
     }
-
-    public void openInfoSite(View v){
-        NavigationUtils.openUrl(this, "https://ifrs.edu.br/rolante/ensino/curso-tecnico-em-informatica-integrado-ao-ensino-medio/");
-    }
-
-    public void openOuthersCourses(View v){
-        NavigationUtils.openActivity(this, ListCourses.class);
+    public void openExams(View v){
+        NavigationUtils.openUrl(this, "https://ingresso.ifrs.edu.br/2025/provas-e-gabaritos-anteriores/");
     }
 }

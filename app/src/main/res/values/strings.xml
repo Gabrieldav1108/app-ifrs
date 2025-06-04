@@ -148,4 +148,47 @@
         \tEm breve, 10 novos restaurantes estudantis e 5 bibliotecas serão construídos em diversos campi, com investimento de R$ 24,5 milhões do novo PAC.\n
         Mais espaços, mais estrutura, mais oportunidades para todos!
     </string>
+
+    -------------exam guide-----------
+
+    <string name="formated_what_you_need_know">
+        -<b>Local</b>: As provas do Campus Rolante são realizadas nas salas do próprio campus\n
+        -Confirme sempre seu local de prova no site oficial do <b>ingresso IFRS</b>.
+    </string>
+    <string name="formated_exam_integrated">
+        Prova objetiva com 40 questões:\n
+        → Matemática - 10\n
+        → Ciências da Natureza - 10\n
+        → Ciências Humanas - 10\n
+        → Língua Portuguesa - 10
+    </string>
+    <string name="formated_exam_tecnic">
+        Prova objetiva com 40 questões:\n
+        → Matemática e suas Tecnologias - 10\n
+        → Ciências da Natureza e suas Tecnologias - 10\n
+        → Ciências Humanas e suas Tecnologias - 10\n
+        → Linguagem, Códigos e suas Tecnologias - 10
+    </string>
+    <string name="formated_exam_superior">
+        Prova objetiva com 45 questões:\n
+        → Matemática – 10\n
+        → Ciências da Natureza – 10\n
+        → Ciências Humanas – 10\n
+        → Linguagens – 15\n
+        -Prova de Redação
+    </string>
+    <string name="formated_exam_grounds_for_desqualification">
+        -Não acertar nenhuma questão → eliminado\n
+        -Redação zerada → eliminado (para cursos superiores)
+    </string>
+    <string name="formated_whats_to_bring">
+        -Documento de identificação com foto\n
+        -Caneta esferográfica azul ou preta\n
+        -Garrafa de água
+    </string>
+    <string name="formated_whats_to_not_bring">
+        -Bonés, véus, óculos escuros ou fones\n
+        -Aparelhos eletrônicos (devem ser desligados e guardados)\n
+        -Não pode consumir alimentos na sala
+    </string>
 </resources>

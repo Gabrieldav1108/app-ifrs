@@ -91,6 +91,10 @@ public class AdmScreen extends AppCompatActivity {
             openContructionInProgress();
             return true;
         }
+        else if (id == R.id.menu_prova) {
+            openExamGuide();
+            return true;
+        }
 // Outros itens do menu...
         return super.onOptionsItemSelected(item);
     }
@@ -102,6 +106,9 @@ public class AdmScreen extends AppCompatActivity {
     }
     private void openContructionInProgress() {
         NavigationUtils.openActivity(this, ConstructionInProgress.class);
+    }
+    private void openExamGuide() {
+        NavigationUtils.openActivity(this, ExamGuide.class);
     }
     private void openIfrsSite() {
         NavigationUtils.openUrl(this, "https://ifrs.edu.br/rolante/");
