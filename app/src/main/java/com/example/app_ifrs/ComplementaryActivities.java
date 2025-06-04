@@ -174,4 +174,7 @@ public class ComplementaryActivities extends AppCompatActivity {
     public void openTechnicalVisits(View v){
         NavigationUtils.openActivity(this, TechnicalVisits.class);
     }
+    public void openPraticSports(View v){
+        NavigationUtils.openActivity(this, PraticSports.class);
+    }
 }

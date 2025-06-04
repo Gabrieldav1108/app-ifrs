@@ -233,4 +233,8 @@
     <string name="formated_text_technical_visits">
         O IFRS - Campus Rolante oferece aos estudantes a oportunidade de realizar visitas técnicas a diferentes locais, o que amplia e expande significativamente o conhecimento adquirido ao longo do curso escolhido. Essas experiências permitem um contato direto com a prática profissional e com diversas áreas do conhecimento, enriquecendo a formação do aluno de forma interdisciplinar. Além de auxiliar na tomada de decisões sobre a carreira, as visitas também proporcionam vivências que fortalecem habilidades, desenvolvem novas perspectivas e aprofundam a compreensão sobre o mundo do trabalho e muito além dele.
     </string>
+    <string name="formated_text_pratic_sports">
+         Campus Rolante promove a participação dos estudantes em diversas práticas esportivas, oferecendo treinamentos regulares em várias modalidades, como vôlei, handebol, tênis de mesa, futsal, basquete, vôlei de praia, xadrez, atletismo, entre outras. A iniciativa busca incentivar a atividade física, o trabalho em equipe e o desenvolvimento de habilidades esportivas.\n\n
+         Os alunos têm a oportunidade de fazer parte das equipes do campus, participando de competições estudantis em diferentes níveis, incluindo eventos institucionais como os Jogos do IF, que reúnem estudantes de diversos institutos federais, além de torneios locais. Essas atividades contribuem para o fortalecimento da convivência escolar e da integração entre os participantes.
+    </string>
 </resources>
