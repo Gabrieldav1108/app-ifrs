@@ -24,7 +24,7 @@
     <item
         android:id="@+id/menu_localizacao"
         android:icon="@drawable/ic_location"
-        android:title="Transporte"
+        android:title="Localização e Transporte"
         app:showAsAction="never"/>
     <item
         android:id="@+id/menu_bolsas"

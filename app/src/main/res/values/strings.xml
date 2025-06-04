@@ -200,4 +200,12 @@
         -Aparelhos eletrônicos (devem ser desligados e guardados)\n
         -Não pode consumir alimentos na sala
     </string>
+    <string name="formated_location_campus">
+        Rodovia RS-239, Km 68, Nº 3505 (Estrada Taquara/Rolante)\n
+        CEP: 95690-000 | Rolante/RS Caixa Postal 118 (correspondência)\n
+        Telefone: (51) 3547-9600\n
+        Assessoria de Comunicação\n
+        Email: comunicacao@rolante.ifrs.edu.br
+
+    </string>
 </resources>

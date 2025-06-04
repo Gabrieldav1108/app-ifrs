@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Lista de IDs de recursos das imagens
         List<Integer> localImages = Arrays.asList(
-                R.drawable.ifrs,
+                R.drawable.ifrs_drone,
                 R.drawable.campus,
                 R.drawable.campus2,
                 R.drawable.balanco,
