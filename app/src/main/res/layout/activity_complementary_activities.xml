@@ -59,7 +59,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="78dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:layout_gravity="center"
                 android:background="@drawable/rounded_border_blue_secundary"
@@ -68,7 +68,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="75dp"
+                    android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:padding="15dp">
                     <TextView
@@ -100,45 +100,140 @@
             android:background="@drawable/more_rounded_border">
         </FrameLayout>
 
-        <FrameLayout
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="15dp"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/rounded_border_green">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:breakStrategy="balanced"
-                android:ellipsize="none"
-                android:fontFamily="@font/alata"
-                android:hyphenationFrequency="normal"
-                android:justificationMode="inter_word"
-                android:maxLines="20"
-                android:scrollHorizontally="false"
-                android:singleLine="false"
-                android:text="@string/text_complementary_activities"
-                android:textColor="@color/white"
-                android:textSize="15sp"
-                />
-        </FrameLayout>
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="300sp"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="20dp">
-
-            <androidx.recyclerview.widget.RecyclerView
+            android:layout_height="match_parent">
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/recycler"
-                app:layoutManager="com.google.android.material.carousel.CarouselLayoutManager"
-                android:orientation="horizontal"
-                android:background="@drawable/rounded_border"/>
-        </RelativeLayout>
+                android:paddingBottom="15dp"
+                android:orientation="vertical">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/rounded_border_green">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:breakStrategy="balanced"
+                        android:ellipsize="none"
+                        android:fontFamily="@font/alata"
+                        android:hyphenationFrequency="normal"
+                        android:justificationMode="inter_word"
+                        android:maxLines="20"
+                        android:scrollHorizontally="false"
+                        android:singleLine="false"
+                        android:text="@string/text_complementary_activities"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        />
+                </FrameLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="230sp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="20dp">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/recycler"
+                        app:layoutManager="com.google.android.material.carousel.CarouselLayoutManager"
+                        android:orientation="horizontal"
+                        android:background="@drawable/rounded_border"/>
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Veja as Opções de Atividades Complementares:"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/alata"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    />
+                <com.google.android.flexbox.FlexboxLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_border_blue_full"
+                        android:layout_marginEnd="10dp"
+                        android:orientation="vertical"
+                        android:onClick="openAdmScreen"
+                        android:padding="8dp">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:text="Esportes"
+                            android:textSize="11dp"
+                            android:fontFamily="@font/alata" />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/logo_adm_recorted"
+                            android:padding="5dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_border_blue_full"
+                        android:layout_marginEnd="10dp"
+                        android:orientation="vertical"
+                        android:onClick="openTechnicalVisits"
+                        android:padding="8dp">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:text="Visitas Técnicas"
+                            android:textSize="11dp"
+                            android:fontFamily="@font/alata" />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/logo_agro_recorted"
+                            android:padding="5dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_border_blue_full"
+                        android:orientation="vertical"
+                        android:onClick="openInfoScreen"
+                        android:padding="8dp">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:text="Núcleos"
+                            android:textSize="11dp"
+                            android:fontFamily="@font/alata" />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/logo_info_recorted"
+                            android:padding="5dp"/>
+                    </LinearLayout>
+
+
+                </com.google.android.flexbox.FlexboxLayout>
+            </LinearLayout>
+        </ScrollView>
+
 
     </LinearLayout>
 

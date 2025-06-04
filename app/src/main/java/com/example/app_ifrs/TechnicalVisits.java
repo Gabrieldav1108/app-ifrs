@@ -26,13 +26,13 @@ import java.util.List;
 
 import Helpers.NavigationUtils;
 
-public class ComplementaryActivities extends AppCompatActivity {
+public class TechnicalVisits extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_complementary_activities);
+        setContentView(R.layout.activity_technical_visits);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -52,11 +52,12 @@ public class ComplementaryActivities extends AppCompatActivity {
 
         // Lista de IDs de recursos das imagens
         List<Integer> localImages = Arrays.asList(
-                R.drawable.atvd1,
-                R.drawable.atvd2,
-                R.drawable.atvd3,
-                R.drawable.atvd4,
-                R.drawable.atvd5
+                R.drawable.img_visit1,
+                R.drawable.img_visit2,
+                R.drawable.img_visit3,
+                R.drawable.img_visit4,
+                R.drawable.img_visit5,
+                R.drawable.img_visit6
         );
 
         ImageAdapter adapter  = new ImageAdapter(this, localImages);
@@ -72,7 +73,6 @@ public class ComplementaryActivities extends AppCompatActivity {
 
         recyclerView.setAdapter(adapter);
     }
-
     //------menu-----
     private void setSupportActionBar() {
         if (getSupportActionBar() != null) {
@@ -171,7 +171,6 @@ public class ComplementaryActivities extends AppCompatActivity {
     private void openSelectionProcess() {
         NavigationUtils.openActivity(this, SelectionProcess.class);
     }
-    public void openTechnicalVisits(View v){
-        NavigationUtils.openActivity(this, TechnicalVisits.class);
-    }
+
+
 }
