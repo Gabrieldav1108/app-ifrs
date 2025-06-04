@@ -34,7 +34,12 @@
     <item
         android:id="@+id/menu_atividades"
         android:icon="@drawable/ic_activities"
-        android:title="Atividades Complementares"
+        android:title="Formação Complementar"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/menu_assistencia"
+        android:icon="@drawable/ic_money"
+        android:title="Assistência Estudantil"
         app:showAsAction="never"/>
     <item
         android:id="@+id/menu_obras"

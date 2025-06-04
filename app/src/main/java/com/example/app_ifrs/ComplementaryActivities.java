@@ -125,6 +125,9 @@ public class ComplementaryActivities extends AppCompatActivity {
         }else if (id == R.id.menu_prova) {
             openExamGuide();
             return true;
+        }else if (id == R.id.menu_assistencia) {
+            openStudentAssistence();
+            return true;
         }
 
 
@@ -134,6 +137,9 @@ public class ComplementaryActivities extends AppCompatActivity {
 
     private void openCoursesScreen() {
         NavigationUtils.openActivity(this, ModalitiesOffered.class);
+    }
+    private void openStudentAssistence() {
+        NavigationUtils.openActivity(this, StudentAssistence.class);
     }
     private void openExamGuide() {
         NavigationUtils.openActivity(this, ExamGuide.class);

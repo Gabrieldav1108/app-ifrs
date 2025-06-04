@@ -224,6 +224,9 @@ public class MainActivity extends AppCompatActivity {
         }else if (id == R.id.menu_prova) {
             openExamGuide();
             return true;
+        } else if (id == R.id.menu_assistencia) {
+            openStudentAssistence();
+            return true;
         }
 // Outros itens do menu...
         return super.onOptionsItemSelected(item);
@@ -231,6 +234,9 @@ public class MainActivity extends AppCompatActivity {
 
     private void openCoursesScreen() {
         NavigationUtils.openActivity(this, ModalitiesOffered.class);
+    }
+    private void openStudentAssistence() {
+        NavigationUtils.openActivity(this, StudentAssistence.class);
     }
     private void openContructionInProgress() {
         NavigationUtils.openActivity(this, ConstructionInProgress.class);

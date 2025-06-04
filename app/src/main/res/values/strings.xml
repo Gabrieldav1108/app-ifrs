@@ -206,6 +206,28 @@
         Telefone: (51) 3547-9600\n
         Assessoria de Comunicação\n
         Email: comunicacao@rolante.ifrs.edu.br
-
+    </string>
+    <string name="text_caep">
+        A Coordenadoria de Assistência Estudantil e Pedagógica (CAEP) é um setor do Campus Rolante, vinculado à Diretoria de Ensino, responsável por planejar, executar e acompanhar a Política de Assistência Estudantil do IFRS, em consonância com o Programa Nacional de Assistência Estudantil (PNAES).
+        A CAEP desenvolve ações sociais, pedagógicas e de saúde que promovem a permanência e a qualidade de vida dos estudantes.
+        Entre essas ações, destacam-se os auxílios financeiros oferecidos aos estudantes em situação de vulnerabilidade social, como forma de apoio à sua trajetória acadêmica.
+    </string>
+    <string name="formated_text_student_assistence">
+        O Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Sul (IFRS) disponibiliza, por meio de sua Política de Assistência Estudantil, <b>auxílios financeiros</b> que visam garantir o acesso, a permanência e o êxito dos estudantes em situação de vulnerabilidade social.
+        Estes auxílios são voltados especialmente para quem enfrenta dificuldades relacionadas a transporte, alimentação, moradia e outras necessidades essenciais para a continuidade da trajetória acadêmica.
+        No IFRS, os principais auxílios disponíveis são:\n
+        -<b>Auxílio Permanência:</b> para ajudar nas despesas do dia a dia, como transporte, alimentação e materiais escolares.\n
+        -<b>Auxílio Moradia:</b> destinado a quem precisa residir na cidade ou região do campus para frequentar as aulas presenciais.
+    </string>
+    <string name="formated_text_values_assistence">
+        -<b>Auxílio Permanência:</b>\n
+        \t<b>-Grupo 1:</b> R$ 220,00\n
+        \t<b>-Grupo 2:</b> R$ 157,00\n
+        \t<b>-Grupo 3:</b> R$ 94,00\n
+        \t<b>-Grupo 4:</b> R$ 31,00\n
+        <b>-Auxílio Moradia:</b> R$ 350,00
+    </string>
+    <string name="formated_text_danger_assistence">
+        Esses valores podem mudar ao longo do ano. É essencial acompanhar as atualizações nos canais oficiais da CAEP, como o site oficial e o Instagram @caep.rolante.ifrs.
     </string>
 </resources>

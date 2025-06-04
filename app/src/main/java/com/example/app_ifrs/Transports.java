@@ -91,6 +91,9 @@ public class Transports extends AppCompatActivity {
         }else if (id == R.id.menu_prova) {
             openExamGuide();
             return true;
+        }else if (id == R.id.menu_assistencia) {
+            openStudentAssistence();
+            return true;
         }
 
 
@@ -105,6 +108,9 @@ public class Transports extends AppCompatActivity {
     }
     private void openContructionInProgress() {
         NavigationUtils.openActivity(this, ConstructionInProgress.class);
+    }
+    private void openStudentAssistence() {
+        NavigationUtils.openActivity(this, StudentAssistence.class);
     }
     private void openExamGuide() {
         NavigationUtils.openActivity(this, ExamGuide.class);
@@ -137,5 +143,8 @@ public class Transports extends AppCompatActivity {
     }
     public void openFreePass(View v){
         NavigationUtils.openActivity(this, FreePass.class);
+    }
+    public void openSite(View v){
+
     }
 }

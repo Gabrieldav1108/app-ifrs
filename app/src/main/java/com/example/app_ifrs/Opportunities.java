@@ -90,6 +90,9 @@ public class Opportunities extends AppCompatActivity {
         }else if (id == R.id.menu_prova) {
             openExamGuide();
             return true;
+        }else if (id == R.id.menu_assistencia) {
+            openStudentAssistence();
+            return true;
         }
 
 
@@ -102,7 +105,9 @@ public class Opportunities extends AppCompatActivity {
     private void openCoursesScreen() {
         NavigationUtils.openActivity(this, ModalitiesOffered.class);
     }
-
+    private void openStudentAssistence() {
+        NavigationUtils.openActivity(this, StudentAssistence.class);
+    }
     private void openTransportsScreen(){
         NavigationUtils.openActivity(this, Transports.class);
     }

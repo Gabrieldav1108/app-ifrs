@@ -167,6 +167,9 @@ public class ListCourses extends AppCompatActivity {
         }else if (id == R.id.menu_prova) {
             openExamGuide();
             return true;
+        }else if (id == R.id.menu_assistencia) {
+            openStudentAssistence();
+            return true;
         }
 // Outros itens do menu...
         return super.onOptionsItemSelected(item);
@@ -176,6 +179,9 @@ public class ListCourses extends AppCompatActivity {
 
     private void openCoursesScreen() {
         NavigationUtils.openActivity(this, ModalitiesOffered.class);
+    }
+    private void openStudentAssistence() {
+        NavigationUtils.openActivity(this, StudentAssistence.class);
     }
     private void openExamGuide() {
         NavigationUtils.openActivity(this, ExamGuide.class);

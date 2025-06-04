@@ -128,6 +128,9 @@ public class ScolarshipsDetails extends AppCompatActivity {
         }else if (id == R.id.menu_prova) {
             openExamGuide();
             return true;
+        }else if (id == R.id.menu_assistencia) {
+            openStudentAssistence();
+            return true;
         }
 // Outros itens do menu...
         return super.onOptionsItemSelected(item);
@@ -138,6 +141,9 @@ public class ScolarshipsDetails extends AppCompatActivity {
     }
     private void openExamGuide() {
         NavigationUtils.openActivity(this, ExamGuide.class);
+    }
+    private void openStudentAssistence() {
+        NavigationUtils.openActivity(this, StudentAssistence.class);
     }
     private void openContructionInProgress() {
         NavigationUtils.openActivity(this, ConstructionInProgress.class);
