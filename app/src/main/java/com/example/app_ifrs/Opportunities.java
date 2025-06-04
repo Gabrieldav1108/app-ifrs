@@ -84,6 +84,9 @@ public class Opportunities extends AppCompatActivity {
         }else if (id == R.id.menu_sobre) {
             openDeveloperTeam();
             return true;
+        }else if (id == R.id.menu_obras) {
+            openContructionInProgress();
+            return true;
         }
 
 
@@ -102,6 +105,9 @@ public class Opportunities extends AppCompatActivity {
     }
     private void openActivities() {
         NavigationUtils.openActivity(this, ComplementaryActivities.class);
+    }
+    private void openContructionInProgress() {
+        NavigationUtils.openActivity(this, ConstructionInProgress.class);
     }
     private void openDeveloperTeam() {
         NavigationUtils.openActivity(this, DeveloperTeam.class);

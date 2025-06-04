@@ -19,7 +19,7 @@
     <item
         android:id="@+id/menu_localizacao"
         android:icon="@drawable/ic_location"
-        android:title="Localização e Transporte"
+        android:title="Transporte"
         app:showAsAction="never"/>
     <item
         android:id="@+id/menu_bolsas"
@@ -30,6 +30,11 @@
         android:id="@+id/menu_atividades"
         android:icon="@drawable/ic_activities"
         android:title="Atividades Complementares"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/menu_obras"
+        android:icon="@drawable/obras_icon"
+        android:title="Obras em Andamento"
         app:showAsAction="never"/>
     <item
         android:id="@+id/menu_sobre"

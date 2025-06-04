@@ -1,9 +1,10 @@
 package com.example.app_ifrs;
 
+import android.app.ActivityOptions;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,29 +13,62 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.app_ifrs.adapters.ImageAdapter;
+import com.google.android.material.carousel.CarouselLayoutManager;
+
+import java.util.Arrays;
+import java.util.List;
 
 import Helpers.NavigationUtils;
 
-public class ModalitiesOffered extends AppCompatActivity {
+public class ConstructionInProgress extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_modalities_offered);
+        setContentView(R.layout.activity_construction_in_progress);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        //-------menu--------
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        // Habilita o ícone de navegação (três riscos)
         if (getSupportActionBar() != null) {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-            getSupportActionBar().setHomeAsUpIndicator(R.drawable.menu); // Seu ícone
+            getSupportActionBar().setHomeAsUpIndicator(R.drawable.menu);
         }
+        //---------carrosel----------
+
+        RecyclerView recyclerView = findViewById(R.id.recycler);
+        recyclerView.setLayoutManager(new CarouselLayoutManager());
+
+        // Lista de IDs de recursos das imagens
+        List<Integer> localImages = Arrays.asList(
+                R.drawable.contruction1,
+                R.drawable.construction2
+        );
+
+        ImageAdapter adapter  = new ImageAdapter(this, localImages);
+        adapter.setOnItemClickListener((imageView, resId) -> {
+            Intent intent = new Intent(this, ImageViewActivity.class);
+            intent.putExtra("image_res", resId);
+
+            ActivityOptions options = ActivityOptions
+                    .makeSceneTransitionAnimation(this, imageView, "image");
+
+            startActivity(intent, options.toBundle());
+        });
+
+        recyclerView.setAdapter(adapter);
     }
+    //------menu-----
     private void setSupportActionBar() {
         if (getSupportActionBar() != null) {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -61,21 +95,21 @@ public class ModalitiesOffered extends AppCompatActivity {
             openOptionsMenu();
             return true;
         } else if (id == R.id.menu_cursos) {
-            openModalitiesOffered();
+            openCoursesScreen();
             return true;
         } else if (id == R.id.menu_processo) {
             openSelectionProcess();
             return true;
-        }else if (id == R.id.menu_localizacao) {
-            openTransportsScreen();
-            return true;
-        }
-        else if (id == R.id.menu_bolsas) {
+        }else if (id == R.id.menu_bolsas) {
             openOportunity();
             return true;
         }
+        else if (id == R.id.menu_localizacao) {
+            openTransportsScreen();
+            return true;
+        }
         else if (id == R.id.menu_atividades) {
-            openActivities();
+            openAtctivities();
             return true;
         }else if (id == R.id.menu_principal) {
             openMainScreen();
@@ -91,40 +125,31 @@ public class ModalitiesOffered extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    private void openModalitiesOffered() {
-        NavigationUtils.openActivity(this, getClass());
-    }
-    private void openSelectionProcess() {
-        NavigationUtils.openActivity(this, SelectionProcess.class);
+    private void openCoursesScreen() {
+        NavigationUtils.openActivity(this, ModalitiesOffered.class);
     }
     private void openContructionInProgress() {
         NavigationUtils.openActivity(this, ConstructionInProgress.class);
     }
-    private void openActivities() {
-        NavigationUtils.openActivity(this, ComplementaryActivities.class);
+    private void openIfrsSite() {
+        NavigationUtils.openUrl(this, "https://ifrs.edu.br/rolante/");
+    }
+    private void openSelectionProcess() {
+        NavigationUtils.openActivity(this, SelectionProcess.class);
     }
     private void openDeveloperTeam() {
         NavigationUtils.openActivity(this, DeveloperTeam.class);
     }
-    private void openIfrsSite() {
-        NavigationUtils.openUrl(this, "https://ifrs.edu.br/rolante/");
+    private void openAtctivities() {
+        NavigationUtils.openActivity(this, ComplementaryActivities.class);
+    }
+    private void openMainScreen(){
+        NavigationUtils.openActivity(this, MainActivity.class);
     }
     private void openTransportsScreen(){
         NavigationUtils.openActivity(this, Transports.class);
     }
     private void openOportunity(){
         NavigationUtils.openActivity(this, Opportunities.class);
-    }
-
-    private void openMainScreen(){
-        NavigationUtils.openActivity(this, MainActivity.class);
-    }
-
-    public void openIntegratedCourses(View v){
-        NavigationUtils.openActivity(this, CoursesIntegrated.class);
-    }
-
-    public void openOuthersCourses(View v){
-        NavigationUtils.openActivity(this, ListCourses.class);
     }
 }

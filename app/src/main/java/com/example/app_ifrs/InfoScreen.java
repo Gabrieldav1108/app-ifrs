@@ -88,6 +88,9 @@ public class InfoScreen extends AppCompatActivity {
         }else if (id == R.id.menu_sobre) {
             openDeveloperTeam();
             return true;
+        }else if (id == R.id.menu_obras) {
+            openContructionInProgress();
+            return true;
         }
 // Outros itens do menu...
         return super.onOptionsItemSelected(item);
@@ -106,6 +109,9 @@ public class InfoScreen extends AppCompatActivity {
     }
     private void openSelectionProcess() {
         NavigationUtils.openActivity(this, SelectionProcess.class);
+    }
+    private void openContructionInProgress() {
+        NavigationUtils.openActivity(this, ConstructionInProgress.class);
     }
     private void openActivities() {
         NavigationUtils.openActivity(this,ComplementaryActivities.class);

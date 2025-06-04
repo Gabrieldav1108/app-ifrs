@@ -122,6 +122,9 @@ public class ScolarshipsDetails extends AppCompatActivity {
         }else if (id == R.id.menu_sobre) {
             openDeveloperTeam();
             return true;
+        }else if (id == R.id.menu_obras) {
+            openContructionInProgress();
+            return true;
         }
 // Outros itens do menu...
         return super.onOptionsItemSelected(item);
@@ -129,6 +132,9 @@ public class ScolarshipsDetails extends AppCompatActivity {
 
     private void openCoursesScreen() {
         NavigationUtils.openActivity(this, ModalitiesOffered.class);
+    }
+    private void openContructionInProgress() {
+        NavigationUtils.openActivity(this, ConstructionInProgress.class);
     }
     private void openIfrsSite() {
         NavigationUtils.openUrl(this, "https://ifrs.edu.br/rolante/");

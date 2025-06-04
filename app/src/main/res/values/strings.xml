@@ -144,4 +144,8 @@
         <b>Coordenação do curso:</b> Fábio Zschornack\n
         <b>E-mail:</b> informatica@rolante.ifrs.edu.br
     </string>
+    <string name="formated_contruction_text">
+        \tEm breve, 10 novos restaurantes estudantis e 5 bibliotecas serão construídos em diversos campi, com investimento de R$ 24,5 milhões do novo PAC.\n
+        Mais espaços, mais estrutura, mais oportunidades para todos!
+    </string>
 </resources>
