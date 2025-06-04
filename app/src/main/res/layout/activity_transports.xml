@@ -104,55 +104,60 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginBottom="15dp">
-            <FrameLayout
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="18dp"
-                android:layout_marginTop="30dp"
-                android:background="@drawable/rounded_border_green">
-
-                <TextView
-                    android:layout_width="wrap_content"
+                android:orientation="vertical">
+                <FrameLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:breakStrategy="balanced"
-                    android:ellipsize="none"
-                    android:fontFamily="@font/alata"
-                    android:hyphenationFrequency="normal"
-                    android:justificationMode="inter_word"
-                    android:maxLines="20"
-                    android:scrollHorizontally="false"
-                    android:singleLine="false"
-                    android:text="@string/formated_text_transport"
-                    android:textColor="@color/white"
-                    android:textSize="15sp"
-                    />
-            </FrameLayout>
-            <com.google.android.flexbox.FlexboxLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingTop="20dp"
-                app:flexWrap="nowrap"
-                app:justifyContent="space_between"
-                app:alignItems="center">
+                    android:padding="18dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/rounded_border_green">
 
-                <Button
-                    android:layout_width="wrap_content"
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:breakStrategy="balanced"
+                        android:ellipsize="none"
+                        android:fontFamily="@font/alata"
+                        android:hyphenationFrequency="normal"
+                        android:justificationMode="inter_word"
+                        android:maxLines="20"
+                        android:scrollHorizontally="false"
+                        android:singleLine="false"
+                        android:text="@string/formated_text_transport"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        />
+                </FrameLayout>
+                <com.google.android.flexbox.FlexboxLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    style="@style/BlueButton"
-                    android:background="@drawable/rounded_border_blue_full"
-                    android:text="Empresas"
-                    android:textStyle="bold"
-                    android:onClick="openCompany"/>
+                    android:paddingTop="20dp"
+                    app:flexWrap="nowrap"
+                    app:justifyContent="space_between"
+                    app:alignItems="center">
 
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    style="@style/BlueButton"
-                    android:background="@drawable/rounded_border_blue_full"
-                    android:text="Passe Livre"
-                    android:onClick="openFreePass"
-                    android:textStyle="bold"/>
-            </com.google.android.flexbox.FlexboxLayout>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/BlueButton"
+                        android:background="@drawable/rounded_border_blue_full"
+                        android:text="Empresas"
+                        android:textStyle="bold"
+                        android:onClick="openCompany"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/BlueButton"
+                        android:background="@drawable/rounded_border_blue_full"
+                        android:text="Passe Livre"
+                        android:onClick="openFreePass"
+                        android:textStyle="bold"/>
+                </com.google.android.flexbox.FlexboxLayout>
+            </LinearLayout>
         </ScrollView>
 
     </LinearLayout>

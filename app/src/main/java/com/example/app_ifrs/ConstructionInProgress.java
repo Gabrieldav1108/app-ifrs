@@ -51,7 +51,7 @@ public class ConstructionInProgress extends AppCompatActivity {
 
         // Lista de IDs de recursos das imagens
         List<Integer> localImages = Arrays.asList(
-                R.drawable.contruction1,
+                R.drawable.construction1,
                 R.drawable.construction2
         );
 
