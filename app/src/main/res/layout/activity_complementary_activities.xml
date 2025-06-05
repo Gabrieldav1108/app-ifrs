@@ -87,7 +87,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:fontFamily="@font/adlam_display"
-                        android:text="Atividades Complementares"
+                        android:text="Formação Complementar"
                         android:textAlignment="center"
                         android:textColor="@color/white"
                         android:textSize="20sp" />
@@ -155,7 +155,7 @@
                     android:fontFamily="@font/alata"
                     android:textColor="@color/white"
                     android:textStyle="bold"
-                    android:textSize="13sp"
+                    android:textSize="15sp"
                     />
                 <com.google.android.flexbox.FlexboxLayout
                     android:layout_marginTop="5dp"
@@ -181,8 +181,7 @@
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/logo_adm_recorted"
-                            android:padding="5dp"/>
+                            android:src="@drawable/ic_sports" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -204,15 +203,14 @@
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/logo_agro_recorted"
-                            android:padding="5dp"/>
+                            android:src="@drawable/ic_technic_visit" />
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@drawable/rounded_border_blue_full"
                         android:orientation="vertical"
-                        android:onClick="openInfoScreen"
+                        android:onClick="openAcademicCenters"
                         android:padding="8dp">
                         <TextView
                             android:layout_width="match_parent"
@@ -225,7 +223,7 @@
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/logo_info_recorted"
+                            android:src="@drawable/ic_knowledge"
                             android:padding="5dp"/>
                     </LinearLayout>
 

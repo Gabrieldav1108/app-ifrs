@@ -15,6 +15,9 @@
         android:theme="@style/Theme.App_ifrs"
         tools:targetApi="31">
         <activity
+            android:name=".AcademicCenters"
+            android:exported="false" />
+        <activity
             android:name=".PraticSports"
             android:exported="false" />
         <activity

@@ -85,7 +85,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:fontFamily="@font/adlam_display"
-                    android:text="Guida de Provas"
+                    android:text="Guia de Provas"
                     android:textAlignment="center"
                     android:textColor="@color/white"
                     android:textSize="20sp" />

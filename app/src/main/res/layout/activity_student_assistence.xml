@@ -114,11 +114,11 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Coordenadoria de Assistência Estudantil e Pedagógica – CAEP"
+                        android:text="CAEP"
                         android:fontFamily="@font/alata"
                         android:textColor="@color/white"
                         android:textStyle="bold"
-                        android:textSize="12dp"
+                        android:textSize="15dp"
                         />
                     <TextView
                         android:layout_width="match_parent"

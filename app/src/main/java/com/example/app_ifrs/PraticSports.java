@@ -52,11 +52,11 @@ public class PraticSports extends AppCompatActivity {
         // Lista de IDs de recursos das imagens
         List<Integer> localImages = Arrays.asList(
                 R.drawable.img_sports1,
-                R.drawable.img_visit2,
-                R.drawable.img_visit3,
-                R.drawable.img_visit4,
-                R.drawable.img_visit5,
-                R.drawable.img_visit6
+                R.drawable.img_sports2,
+                R.drawable.img_sports3,
+                R.drawable.img_sports4,
+                R.drawable.img_sports5,
+                R.drawable.img_sports6
         );
 
         ImageAdapter adapter  = new ImageAdapter(this, localImages);
