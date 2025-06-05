@@ -266,10 +266,16 @@
         https://memoria.ifrs.edu.br/timeline/unidade/campus-rolante/
     </string>
     <string name="text_napne">
-Este grupo atua como promotor de ações inclusivas, buscando garantir não apenas o ingresso de estudantes com necessidades educacionais específicas, mas também sua permanência e sucesso, preparando-os para uma inserção qualificada no mundo do trabalho. Suas atividades se desenvolvem nas áreas de ensino, pesquisa e extensão.    </string>
+        Este grupo atua como promotor de ações inclusivas, buscando garantir não apenas o ingresso de estudantes com necessidades educacionais específicas, mas também sua permanência e sucesso, preparando-os para uma inserção qualificada no mundo do trabalho. Suas atividades se desenvolvem nas áreas de ensino, pesquisa e extensão.    </string>
     <string name="text_contact_napne">
         <b>Contato:</b> napne@rolante.ifrs.edu.br\n
         <b>Instagram:</b> @napne_rolante
-
+    </string>
+    <string name="text_gepea">
+        Este grupo interdisciplinar promove reflexões e desenvolve ações voltadas para a educação antirracista, com atenção especial às questões de gênero e juventude. Reunindo estudantes, educadores e pesquisadores, organiza encontros, debates, projetos de extensão e produz conhecimento crítico, com o objetivo de transformar práticas educacionais e enfrentar desigualdades dentro e fora do ambiente escolar.
+    </string>
+    <string name="text_contact_gepea">
+        <b>Contato:</b> gepea@rolante.ifrs.edu.br\n
+        <b>Instagram:</b> @gepea.ifrs
     </string>
 </resources>

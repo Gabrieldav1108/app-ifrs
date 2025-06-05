@@ -131,9 +131,33 @@ public class ExamGuide extends AppCompatActivity {
         NavigationUtils.openActivity(this, Opportunities.class);
     }
     public void openIngressoIfrs(View v){
-        NavigationUtils.openUrl(this, "https://ingresso.ifrs.edu.br/2025-2/");
+        v.animate()
+                .scaleX(0.95f)
+                .scaleY(0.95f)
+                .setDuration(100)
+                .withEndAction(() -> {
+                    v.animate()
+                            .scaleX(1f)
+                            .scaleY(1f)
+                            .setDuration(100)
+                            .start();
+                    NavigationUtils.openUrl(this, "https://ingresso.ifrs.edu.br/2025-2/");
+                })
+                .start();
     }
     public void openExams(View v){
-        NavigationUtils.openUrl(this, "https://ingresso.ifrs.edu.br/2025/provas-e-gabaritos-anteriores/");
+        v.animate()
+                .scaleX(0.95f)
+                .scaleY(0.95f)
+                .setDuration(100)
+                .withEndAction(() -> {
+                    v.animate()
+                            .scaleX(1f)
+                            .scaleY(1f)
+                            .setDuration(100)
+                            .start();
+                    NavigationUtils.openUrl(this, "https://ingresso.ifrs.edu.br/2025/provas-e-gabaritos-anteriores/");
+                })
+                .start();
     }
 }

@@ -1,13 +1,8 @@
 package com.example.app_ifrs;
 
-import static com.example.app_ifrs.R.id.recycler;
-
-import android.app.ActivityOptions;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,23 +11,16 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
-import androidx.recyclerview.widget.RecyclerView;
-
-import com.example.app_ifrs.adapters.ImageAdapter;
-import com.google.android.material.carousel.CarouselLayoutManager;
-
-import java.util.Arrays;
-import java.util.List;
 
 import Helpers.NavigationUtils;
 
-public class ComplementaryActivities extends AppCompatActivity {
+public class Gepea extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_complementary_activities);
+        setContentView(R.layout.activity_gepea);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -47,32 +35,7 @@ public class ComplementaryActivities extends AppCompatActivity {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
             getSupportActionBar().setHomeAsUpIndicator(R.drawable.menu);
         }
-        RecyclerView recyclerView = findViewById(recycler);
-        recyclerView.setLayoutManager(new CarouselLayoutManager());
-
-        // Lista de IDs de recursos das imagens
-        List<Integer> localImages = Arrays.asList(
-                R.drawable.atvd1,
-                R.drawable.atvd2,
-                R.drawable.atvd3,
-                R.drawable.atvd4,
-                R.drawable.atvd5
-        );
-
-        ImageAdapter adapter  = new ImageAdapter(this, localImages);
-        adapter.setOnItemClickListener((imageView, resId) -> {
-            Intent intent = new Intent(this, ImageViewActivity.class);
-            intent.putExtra("image_res", resId);
-
-            ActivityOptions options = ActivityOptions
-                    .makeSceneTransitionAnimation(this, imageView, "image");
-
-            startActivity(intent, options.toBundle());
-        });
-
-        recyclerView.setAdapter(adapter);
     }
-
     //------menu-----
     private void setSupportActionBar() {
         if (getSupportActionBar() != null) {
@@ -112,7 +75,7 @@ public class ComplementaryActivities extends AppCompatActivity {
             return true;
         }
         else if (id == R.id.menu_atividades) {
-            openAtctivities();
+            openActivities();
             return true;
         }else if (id == R.id.menu_principal) {
             openMainScreen();
@@ -136,17 +99,25 @@ public class ComplementaryActivities extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+
+
     private void openCoursesScreen() {
         NavigationUtils.openActivity(this, ModalitiesOffered.class);
     }
     private void openStudentAssistence() {
         NavigationUtils.openActivity(this, StudentAssistence.class);
     }
-    private void openExamGuide() {
-        NavigationUtils.openActivity(this, ExamGuide.class);
+    private void openTransportsScreen(){
+        NavigationUtils.openActivity(this, Transports.class);
+    }
+    private void openActivities() {
+        NavigationUtils.openActivity(this, ComplementaryActivities.class);
     }
     private void openContructionInProgress() {
         NavigationUtils.openActivity(this, ConstructionInProgress.class);
+    }
+    private void openExamGuide() {
+        NavigationUtils.openActivity(this, ExamGuide.class);
     }
     private void openDeveloperTeam() {
         NavigationUtils.openActivity(this, DeveloperTeam.class);
@@ -154,66 +125,13 @@ public class ComplementaryActivities extends AppCompatActivity {
     private void openIfrsSite() {
         NavigationUtils.openUrl(this, "https://ifrs.edu.br/rolante/");
     }
-
-    private void openTransportsScreen(){
-        NavigationUtils.openActivity(this, Transports.class);
-    }
-    private void openAtctivities() {
-        NavigationUtils.openActivity(this, ComplementaryActivities.class);
-    }
     private void openOprtunity(){
         NavigationUtils.openActivity(this, Opportunities.class);
     }
-    private void openMainScreen(){
-        NavigationUtils.openActivity(this, MainActivity.class);
-    }
-
     private void openSelectionProcess() {
         NavigationUtils.openActivity(this, SelectionProcess.class);
     }
-    public void openTechnicalVisits(View v){
-        v.animate()
-                .scaleX(0.95f)
-                .scaleY(0.95f)
-                .setDuration(100)
-                .withEndAction(() -> {
-                    v.animate()
-                            .scaleX(1f)
-                            .scaleY(1f)
-                            .setDuration(100)
-                            .start();
-                    NavigationUtils.openActivity(this, TechnicalVisits.class);
-                })
-                .start();
-    }
-    public void openPraticSports(View v){
-        v.animate()
-                .scaleX(0.95f)
-                .scaleY(0.95f)
-                .setDuration(100)
-                .withEndAction(() -> {
-                    v.animate()
-                            .scaleX(1f)
-                            .scaleY(1f)
-                            .setDuration(100)
-                            .start();
-                    NavigationUtils.openActivity(this, PraticSports.class);
-                })
-                .start();
-    }
-    public void openAcademicCenters(View v){
-        v.animate()
-                .scaleX(0.95f)
-                .scaleY(0.95f)
-                .setDuration(100)
-                .withEndAction(() -> {
-                    v.animate()
-                            .scaleX(1f)
-                            .scaleY(1f)
-                            .setDuration(100)
-                            .start();
-                    NavigationUtils.openActivity(this, AcademicCenters.class);
-                })
-                .start();
+    private void openMainScreen(){
+        NavigationUtils.openActivity(this, MainActivity.class);
     }
 }

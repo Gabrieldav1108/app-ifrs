@@ -196,5 +196,20 @@ public class AcademicCenters extends AppCompatActivity {
                 })
                 .start();
     }
+    public void openGepea(View v){
+        v.animate()
+                .scaleX(0.95f)
+                .scaleY(0.95f)
+                .setDuration(100)
+                .withEndAction(() -> {
+                    v.animate()
+                            .scaleX(1f)
+                            .scaleY(1f)
+                            .setDuration(100)
+                            .start();
+                    NavigationUtils.openActivity(this, Gepea.class);
+                })
+                .start();
+    }
 
 }

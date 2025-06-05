@@ -138,7 +138,19 @@ public class FreePass extends AppCompatActivity {
         NavigationUtils.openActivity(this, MainActivity.class);
     }
     public void openCompany(View v){
-        NavigationUtils.openActivity(this, TransportsCompanys.class);
+        v.animate()
+                .scaleX(0.95f)
+                .scaleY(0.95f)
+                .setDuration(100)
+                .withEndAction(() -> {
+                    v.animate()
+                            .scaleX(1f)
+                            .scaleY(1f)
+                            .setDuration(100)
+                            .start();
+                    NavigationUtils.openActivity(this, TransportsCompanys.class);
+                })
+                .start();
     }
     public void openFreePass(View v){
         NavigationUtils.openActivity(this, MainActivity.class);
