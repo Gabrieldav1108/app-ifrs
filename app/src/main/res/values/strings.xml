@@ -248,4 +248,11 @@
         <b>Contato:</b> nepgs@rolante.ifrs.edu.br\n
         <b>Instagram:</b> @nepgs_rolante_ifrs
     </string>
+    <string name="text_neabi">
+        Este espaço é dedicado à reflexão e aprofundamento das questões étnico-raciais no contexto brasileiro, com foco no Campus Rolante. Tem como missão promover estudos, pesquisas e ações de extensão, desenvolvendo projetos e programas que dialoguem com diversas áreas do conhecimento.
+        Por meio dessas iniciativas, busca-se ampliar o debate sobre as relações étnico-raciais e contribuir para a formação crítica e cidadã da comunidade acadêmica.    </string>
+    <string name="text_contact_neabi">
+        <b>Contato:</b> neabi@rolante.ifrs.edu.br\n
+        <b>Instagram:</b> @neabifrsrolante | @gepea.ifrs
+    </string>
 </resources>
