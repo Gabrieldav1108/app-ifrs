@@ -239,6 +239,13 @@
     </string>
     <string name="formated_text_academic_centers">
         Os núcleos acadêmicos do IFRS, presentes em diversos campi, como o de Rolante, são espaços institucionais destinados ao suporte e à organização de atividades relacionadas a áreas específicas do conhecimento. Entre essas áreas, destacam-se: educação a distância, cultura e artes, estudos sobre povos afro-brasileiros e indígenas, além de questões de gênero e sexualidade, entre outras temáticas relevantes.
-Com uma atuação articulada entre ensino, pesquisa, extensão e ações afirmativas, esses núcleos contribuem significativamente para a formação de profissionais qualificados. Além disso, desempenham um papel fundamental na promoção da inclusão e no fortalecimento da diversidade no ambiente acadêmico.
+        Com uma atuação articulada entre ensino, pesquisa, extensão e ações afirmativas, esses núcleos contribuem significativamente para a formação de profissionais qualificados. Além disso, desempenham um papel fundamental na promoção da inclusão e no fortalecimento da diversidade no ambiente acadêmico.
+    </string>
+    <string name="text_nepgs">
+        Este espaço é voltado à promoção da igualdade de gênero, ao respeito à diversidade sexual e à realização de ações afirmativas e inclusivas. Busca disseminar informações e fomentar debates saudáveis, valorizando a participação democrática e estabelecendo parcerias com coletivos, instituições e pessoas interessadas em contribuir para uma sociedade mais justa e livre de preconceitos.
+    </string>
+    <string name="text_contact_nepgs">
+        <b>Contato:</b> nepgs@rolante.ifrs.edu.br\n
+        <b>Instagram:</b> @nepgs_rolante_ifrs
     </string>
 </resources>

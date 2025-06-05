@@ -12,6 +12,7 @@ public class NavigationUtils {
     public static void openActivity(Context context, Class<?> destination) {
         Intent intent = new Intent(context, destination);
         context.startActivity(intent);
+
     }
 
     public static void openUrl(Context context, String url) {

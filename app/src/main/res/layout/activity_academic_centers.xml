@@ -146,6 +146,7 @@
                         android:backgroundTint="@color/white"
                         android:clickable="true"
                         android:drawableLeft="@drawable/ic_nepgs"
+                        android:onClick="openNepgs"
                         android:drawablePadding="0dp"
                         android:gravity="center_vertical|start"
                         android:text="NEPGS"
