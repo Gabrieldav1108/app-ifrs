@@ -255,4 +255,14 @@
         <b>Contato:</b> neabi@rolante.ifrs.edu.br\n
         <b>Instagram:</b> @neabifrsrolante | @gepea.ifrs
     </string>
+    <string name="text_numem">
+        O objetivo deste núcleo é atuar na preservação da memória institucional do Campus Rolante. Ele está ligado ao Núcleo de Memória do IFRS — um programa institucional, de caráter interdisciplinar e presente em vários campi, que busca consolidar a memória e a identidade da instituição através do resgate e da divulgação de sua história, tanto anterior quanto posterior à sua criação.
+    </string>
+    <string name="text_contact_numem">
+        <b>Contato:</b> numem@rolante.ifrs.edu.br\n
+        <b>Site:</b> https://memoria.ifrs.edu.br\n
+        <b>Instagram:</b> @neabifrsrolante | @gepea.ifrs
+        <b>Trajetória Histórica — Campus Rolante:</b>\n
+        https://memoria.ifrs.edu.br/timeline/unidade/campus-rolante/
+    </string>
 </resources>

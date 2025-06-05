@@ -177,6 +177,7 @@
                         android:drawablePadding="0dp"
                         android:gravity="center_vertical|start"
                         android:drawableLeft="@drawable/ic_numem"
+                        android:onClick="openNumem"
                         android:textColor="@color/black"
                         android:backgroundTint="@color/white">
 
