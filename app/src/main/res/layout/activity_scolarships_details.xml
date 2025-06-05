@@ -263,6 +263,97 @@
                         android:singleLine="false"
                         />
                 </com.google.android.flexbox.FlexboxLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:gravity="center_horizontal"> <!-- Centraliza horizontalmente -->
+
+                    <!-- Título -->
+                    <TextView
+                        android:id="@+id/titulo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Valores das Bolsas por Carga Horária - Ensino, Pesquisa e Extensão"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:paddingBottom="8dp"
+                        android:gravity="center"
+                        android:textAlignment="center" />
+
+                    <!-- Caixa com cantos arredondados -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_border_green"
+                        android:padding="10dp"
+                        android:orientation="vertical">
+
+                        <!-- Linha 1 -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textStyle="bold"
+                                android:text="4 horas - R$ 175,00"
+                                android:textColor="@android:color/white"
+                                android:textSize="13sp"
+                                android:gravity="center"
+                                android:textAlignment="center"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textStyle="bold"
+                                android:text="12 horas - R$ 525,00"
+                                android:textColor="@android:color/white"
+                                android:textSize="13sp"
+                                android:gravity="center"
+                                android:textAlignment="center"/>
+                        </LinearLayout>
+
+                        <!-- Linha 2 -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="2"
+                            android:layout_marginTop="8dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textStyle="bold"
+                                android:text="8 horas - R$ 350,00"
+                                android:textColor="@android:color/white"
+                                android:textSize="13sp"
+                                android:gravity="center"
+                                android:textAlignment="center"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textStyle="bold"
+                                android:text="16 horas - R$ 700,00"
+                                android:textColor="@android:color/white"
+                                android:textSize="13sp"
+                                android:gravity="center"
+                                android:textAlignment="center"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="340sp"

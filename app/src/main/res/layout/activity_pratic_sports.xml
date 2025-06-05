@@ -122,6 +122,16 @@
                     android:textColor="@color/white"
                     >
                 </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/alata"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rounded_border_green"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:text="Mostre sua paixão por esportes e acompanhe tudo o que rola no @if_sportsrolante, o perfil esportivo do IFRS - Campus Rolante!"
+                    />
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="300sp"
