@@ -3,7 +3,6 @@ package com.example.app_ifrs;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,13 +14,13 @@ import androidx.core.view.WindowInsetsCompat;
 
 import Helpers.NavigationUtils;
 
-public class AcademicCenters extends AppCompatActivity {
+public class Napne extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_academic_centers);
+        setContentView(R.layout.activity_napne);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -135,66 +134,4 @@ public class AcademicCenters extends AppCompatActivity {
     private void openMainScreen(){
         NavigationUtils.openActivity(this, MainActivity.class);
     }
-
-    public void openNepgs(View v){
-        v.animate()
-                .scaleX(0.95f)
-                .scaleY(0.95f)
-                .setDuration(100)
-                .withEndAction(() -> {
-                    v.animate()
-                            .scaleX(1f)
-                            .scaleY(1f)
-                            .setDuration(100)
-                            .start();
-                    NavigationUtils.openActivity(this, Nepgs.class);
-                })
-                .start();
-    }
-    public void openNeabi(View v){
-        v.animate()
-                .scaleX(0.95f)
-                .scaleY(0.95f)
-                .setDuration(100)
-                .withEndAction(() -> {
-                    v.animate()
-                            .scaleX(1f)
-                            .scaleY(1f)
-                            .setDuration(100)
-                            .start();
-                    NavigationUtils.openActivity(this, Neabi.class);
-                })
-                .start();
-    }
-    public void openNumem(View v){
-        v.animate()
-                .scaleX(0.95f)
-                .scaleY(0.95f)
-                .setDuration(100)
-                .withEndAction(() -> {
-                    v.animate()
-                            .scaleX(1f)
-                            .scaleY(1f)
-                            .setDuration(100)
-                            .start();
-                    NavigationUtils.openActivity(this, Numem.class);
-                })
-                .start();
-    }
-    public void openNapne(View v){
-        v.animate()
-                .scaleX(0.95f)
-                .scaleY(0.95f)
-                .setDuration(100)
-                .withEndAction(() -> {
-                    v.animate()
-                            .scaleX(1f)
-                            .scaleY(1f)
-                            .setDuration(100)
-                            .start();
-                    NavigationUtils.openActivity(this, Napne.class);
-                })
-                .start();
-    }
-
 }
